@@ -1,0 +1,70 @@
+files: 175
+   Database files/Biostratigraphy/ConodontSamples.shp 73376
+   Database files/Biostratigraphy/ConodontSamples.shp.xml 43601
+   Database files/Cities/CITIES_P.shp 2928
+   Database files/Cities/CITIES_P.shp.xml 16069
+   Database files/Contours/CTOUR2.shp 148458420
+   Database files/Contours/CTOUR2.shp.xml 15608
+   Database files/Counties/NEVADACOUNTIES.shp 425388
+   Database files/Counties/NEVADACOUNTIES.shp.xml 14639
+   Database files/Geology/NevadaGeology.shp 77167304
+   Database files/Geology/NevadaGeology.shp.xml 77750
+   Database files/Geology/StatewideFaults.shp 9390252
+   Database files/Geology/StatewideFaults.shp.xml 59076
+   Database files/Geology/StatewideGeoBoundaries.shp 43244332
+   Database files/Geology/StatewideGeoBoundaries.shp.xml 53611
+   Database files/Lakes/lake_100.shp 3492896
+   Database files/Lakes/lake_100.shp.xml 17632
+   Database files/PublicLandSurvey/plss100k.shp 15553516
+   Database files/PublicLandSurvey/plss100k.shp.xml 29187
+   Database files/PublicLandSurvey/tr100grid.shp 735340
+   Database files/PublicLandSurvey/tr100grid.shp.xml 17915
+   Database files/Quadrangles/NVQDP.shp 3756916
+   Database files/Quadrangles/NVQDP.shp.xml 18983
+   Database files/Quadrangles/nv_100kquads.shp 57220
+   Database files/Quadrangles/nv_100kquads.shp.xml 20433
+   Database files/Resources/OFR04_1.dbf.xml 42808
+   Database files/Resources/mrds-fUS32.shp 427912
+   Database files/Resources/mrds-fUS32.shp.xml 106642
+   Database files/Rivers/nevadarivers.shp 404012
+   Database files/Rivers/nevadarivers.shp.xml 24243
+   Database files/Roads/ROADS_A.shp 583420
+   Database files/Roads/ROADS_A.shp.xml 19510
+   Metadata/100KQuadMeta.txt 15196
+   Metadata/BiostratigraphyMeta.txt 36990
+   Metadata/CitiesMeta.txt 13750
+   Metadata/ContoursMeta.txt 13598
+   Metadata/CountiesMeta.txt 12047
+   Metadata/LakesMeta.txt 15411
+   Metadata/MinQuadMeta.txt 15676
+   Metadata/MineralsMeta.txt 124363
+   Metadata/NevGeologyMeta.txt 77625
+   Metadata/RiversMeta.txt 22887
+   Metadata/RoadsMeta.txt 15857
+   Metadata/SecGridMeta.txt 26121
+   Metadata/StateFaultsMeta.txt 55488
+   Metadata/StateGeoBdrysMeta.txt 50245
+   Metadata/TRGridMeta.txt 13955
+   Readmefile.txt 8229
+shapefiles: ['Database files/Biostratigraphy/ConodontSamples.shp', 'Database files/Cities/CITIES_P.shp', 'Database files/Contours/CTOUR2.shp', 'Database files/Counties/NEVADACOUNTIES.shp', 'Database files/Geology/NevadaGeology.shp', 'Database files/Geology/StatewideFaults.shp', 'Database files/Geology/StatewideGeoBoundaries.shp', 'Database files/Lakes/lake_100.shp', 'Database files/PublicLandSurvey/plss100k.shp', 'Database files/PublicLandSurvey/tr100grid.shp', 'Database files/Quadrangles/NVQDP.shp', 'Database files/Quadrangles/nv_100kquads.shp', 'Database files/Resources/mrds-fUS32.shp', 'Database files/Rivers/nevadarivers.shp', 'Database files/Roads/ROADS_A.shp']
+  ConodontSamples.shp: 2617 ['Point'] cols=['ID', 'State', 'Min75Quad', 'LatDeg', 'LatMin', 'LongDeg', 'LongMin', 'LocDesc', 'AgeText', 'AgeMax', 'AgeMin', 'Formation', 'LithDesc', 'CAImin', 'CAImax', 'CAItext', 'FieldNo', 'USGSNo', 'EandRNo', 'Organizati']
+  CITIES_P.shp: 101 ['Point'] cols=['AREA', 'PERIMETER', 'NV_CITYU_', 'NV_CITYU_I', 'NAME', 'SYMBOL', 'geometry']
+  CTOUR2.shp: 41336 ['LineString'] cols=['ID', 'CONTOUR', 'geometry']
+  NEVADACOUNTIES.shp: 17 ['Polygon'] cols=['COUNTYNAME', 'COUNTYSEAT', 'DATASOURCE', 'DATASOURC1', 'ID', 'COUNTYABBR', 'geometry']
+  NevadaGeology.shp: 38696 ['Polygon', 'MultiPolygon', nan] cols=['AREA', 'PERIMETER', 'FMATN', 'L_NAME', 'GEOLOGICFM', 'STATEMAP', 'County', 'BioAgeMax', 'BioAgeMin', 'ModPoly', 'Notes', 'Refs', 'Reviewed', 'Shape_Leng', 'Shape_Area', 'geometry']
+  StatewideFaults.shp: 54713 ['LineString', 'MultiLineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'ELK_F_', 'ELK_F_ID', 'F_CODE', 'F_TYPE', 'F_MOVE', 'geometry']
+  StatewideGeoBoundaries.shp: 105265 ['LineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'ELK_G_', 'ELK_G_ID', 'C_CODE', 'C_TYPE', 'geometry']
+  lake_100.shp: 2007 ['Polygon'] cols=['NAME', 'TYPE', 'TYPE_CODE', 'AREA', 'ACRES', 'HECTARES', 'PERIMETER', 'geometry']
+  plss100k.shp: 111295 ['Polygon'] cols=['AREA', 'PERIMETER', 'PLSS100K_', 'PLSS100K_I', 'TOWNSHIP', 'RANGE', 'SECTION', 'LRMTRS', 'TOWNRANGE', 'geometry']
+  tr100grid.shp: 3643 ['Polygon'] cols=['AREA', 'PERIMETER', 'TR100GRID_', 'TR100GRID_', 'DATA', 'SURVEY_TYP', 'geometry']
+  NVQDP.shp: 2348 ['Polygon'] cols=['AREA', 'PERIMETER', 'NVQD_', 'NVQD_ID', 'QUAD_CODE', 'LAT_SE', 'LONG_SE', 'QUAD_NAME', 'STATE_CODE', 'QUAD_SCALE', 'geometry']
+  nv_100kquads.shp: 68 ['Polygon'] cols=['AREA', 'PERIMETER', 'NV_100KQUA', 'NV_100KQUA', 'USGS_QD_ID', 'QUAD_NAME', 'MAP_EDIT', 'ST_FIPS1', 'ST_NAME1', 'ST_FIPS2', 'ST_NAME2', 'ST_FIPS3', 'ST_NAME3', 'ST_FIPS4', 'ST_NAME4', 'DATE_PUB', 'geometry']
+  mrds-fUS32.shp: 15279 ['Point'] cols=['DEP_ID', 'MRDS_ID', 'MAS_ID', 'SITE_NAME', 'LATITUDE', 'LONGITUDE', 'REGION', 'COUNTRY', 'STATE', 'COUNTY', 'DISTRICT', 'ADMIN', 'LAND_STAT', 'COM_TYPE', 'COM_MAJOR', 'COM_MINOR', 'COM_TRACE', 'OPER_TYPE', 'DEP_TYPE', 'PROD_SIZE']
+  nevadarivers.shp: 805 ['LineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'NEV_RIV_', 'NEV_RIV_ID', 'TYPE', 'RIVER_TYPE', 'STATE_FIPS', 'STATE_NAME', 'SUB_REGION', 'geometry']
+  ROADS_A.shp: 607 ['LineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'NV_RDS98_', 'NV_RDS98_I', 'NAME', 'TYPE', 'geometry']
+geology layer: plss100k.shp 111295 EPSG:26911
+Traceback (most recent call last):
+  File "/home/runner/work/project-paleowave/project-paleowave/tools/v4/geology.py", line 52, in <module>
+    lab = next(c for c in geo.columns if c.upper() in ("ORIG_LABEL", "UNIT", "UNITSYMBOL", "LABEL", "MAP_UNIT", "PTYPE", "UNIT_LABEL", "SYMBOL"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
