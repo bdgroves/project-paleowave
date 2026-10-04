@@ -10,7 +10,6 @@ the known finds actually come from.
 """
 import io
 import json
-import re
 import urllib.request
 import zipfile
 from pathlib import Path

@@ -23,6 +23,11 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - run: pip install -q geopandas pandas numpy scipy "scikit-learn==1.9.1" rasterio pillow pyproj shapely
+      - uses: actions/cache@v4
+        with:
+          path: /tmp/v4cache
+          key: v4cache-${{ github.run_id }}
+          restore-keys: v4cache-
       - name: Run tools/v4/${{ inputs.step }}
         run: set -o pipefail; python tools/v4/${{ inputs.step }} 2>&1 | tee /tmp/v4.log
       - name: Commit outputs
