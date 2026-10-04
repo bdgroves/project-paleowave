@@ -378,7 +378,12 @@ def pctile(score_place, score_bg):
 
 evals = {}
 test_idx = np.where((places.has_feats & places.in_area).values)[0]
-for kind in ("logistic", "forest", "exposure"):
+# Ablations: the same forest given only some of the evidence, to see what's doing the work.
+SUBSETS = {"forest": FEATS, "forest_no_distance": [f for f in FEATS if f != "dist_unit"],
+           "forest_terrain": ["slope", "relief", "tpi300", "tpi1000", "north"], "forest_satellite": ["ndvi", "bsi", "carb", "iron"],
+           "distance_only": ["dist_unit"]}
+for kind in ("logistic", "forest", "exposure", "forest_no_distance", "forest_terrain", "forest_satellite", "distance_only"):
+    fs = SUBSETS.get(kind, FEATS)
     rows = []
     for i in test_idx:
         keep = train_ok.values.copy()
@@ -390,11 +395,11 @@ for kind in ("logistic", "forest", "exposure"):
             s_p = float(exposure(P.iloc[[i]][FEATS].assign()).iloc[0])
             s_b = exposure(bg[FEATS]).to_numpy()
         else:
-            Xtr = np.r_[P[keep][FEATS].to_numpy(), Xb]
-            ytr = np.r_[np.ones(keep.sum()), np.zeros(len(Xb))]
-            m = make(kind).fit(Xtr, ytr)
-            s_p = float(m.predict_proba(P.iloc[[i]][FEATS].to_numpy())[0, 1])
-            s_b = m.predict_proba(Xb)[:, 1]
+            Xtr = np.r_[P[keep][fs].to_numpy(), bg[fs].to_numpy()]
+            ytr = np.r_[np.ones(keep.sum()), np.zeros(len(bg))]
+            m = make("logistic" if kind == "logistic" else "forest").fit(Xtr, ytr)
+            s_p = float(m.predict_proba(P.iloc[[i]][fs].to_numpy())[0, 1])
+            s_b = m.predict_proba(bg[fs].to_numpy())[:, 1]
         rows.append({"place": int(places.place[i]), "formation": places.formation[i], "precise": bool(places.precise[i]),
                      "percentile": round(pctile(s_p, s_b), 3), "trained_on": int(keep.sum())})
     r = pd.DataFrame(rows)
@@ -402,8 +407,9 @@ for kind in ("logistic", "forest", "exposure"):
                    "top10": int((r.percentile >= 0.9).sum()), "top25": int((r.percentile >= 0.75).sum()), "n": len(r)}
     log(f"{kind}: held-out places' median percentile {evals[kind]['median_percentile']:.2f}; "
         f"top 10%: {evals[kind]['top10']}/{len(r)}; top 25%: {evals[kind]['top25']}/{len(r)}")
-best = max(("logistic", "forest", "exposure"), key=lambda k: (evals[k]["median_percentile"], evals[k]["top10"]))
-log("best:", best)
+# The model is fixed in advance as the forest on all evidence; the others are there for comparison.
+best = "forest"
+log("model: forest on all features (ablations above for comparison)")
 
 # geology alone: how many places does the rock filter catch, and how much of Nevada does it keep?
 geo_eval = {"places": int(len(places)), "in_area": int(places.in_area.sum()), "precise_in_area": int((places.in_area & places.precise).sum()),
@@ -426,6 +432,8 @@ W, H = int((x1 - gx0) // 90) + 1, int((gy1 - y0) // 90) + 1
 coarse = np.full((H, W), np.nan, "float32")
 for (tx, ty), st in tile_store.items():
     F, ok = st["F"], st["ok"]
+    if not ok.any():
+        continue
     D = pd.DataFrame({f: F[f][ok] for f in FEATS})
     sc = exposure(D).to_numpy() if best == "exposure" else final.predict_proba(D.to_numpy())[:, 1]
     S = np.full(ok.shape, np.nan, "float32")
