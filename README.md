@@ -42,10 +42,10 @@ Smaller corrections: v3's #2 target was described as new to v3, but it was v2 #1
 | Script | Writes | When |
 |---|---|---|
 | [`tools/pbdb.py`](tools/pbdb.py) | `site/pbdb_live.json`: every ichthyosaur occurrence PBDB lists in Nevada | Mondays, by GitHub Actions |
-| [`tools/build.py`](tools/build.py) | `site/targets.geojson`, `site/known.geojson`, `site/triassic.geojson`, `site/panels/` | after each PBDB check |
+| [`tools/build.py`](tools/build.py) | `site/targets.geojson`, `site/known.geojson`, `site/triassic.geojson`, `site/panels/`, and `site/live.json` (what changed in PBDB since the model was trained) | after each PBDB check |
 | [`tools/check.py`](tools/check.py) | `site/checks.json`: the re-check above | after each PBDB check |
 
-If PBDB adds an ichthyosaur record in Nevada at a place the model has never seen, the page says so and marks it on the map with a dashed ring.
+If PBDB adds an ichthyosaur record in Nevada at a place the model has never seen, the page says so and marks it on the map with a dashed ring. The first check (October 4, 2026) found 28 records, none new, and two of the model's 30 gone: both *Omphalosaurus*, which PBDB no longer files under Ichthyosauria.
 
 ```bash
 pixi run -e site pbdb     # or: python tools/pbdb.py

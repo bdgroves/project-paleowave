@@ -72,10 +72,17 @@ live_p = S / "pbdb_live.json"
 extra = 0
 if live_p.exists():
     live = json.loads(live_p.read_text())
+    oid = lambda r: str(r["occurrence_no"]) if str(r["occurrence_no"]).startswith("occ:") else f"occ:{r['occurrence_no']}"  # noqa: E731
+    model_ids = set(known.occurrence_id)
+    live_ids = {oid(r) for r in live["records"]}
+    dropped = pb[pb.occurrence_id.isin(model_ids - live_ids)]
+    summary = {"checked": live["checked"], "live": len(live["records"]), "model": len(model_ids),
+               "still_listed": len(model_ids & live_ids), "new_records": len(live_ids - model_ids),
+               "dropped": [{"id": r.occurrence_id, "taxon": r.taxon_name} for r in dropped.itertuples()]}
     seen = {(round(f["geometry"]["coordinates"][1], 2), round(f["geometry"]["coordinates"][0], 2)) for f in places}
     newp = {}
     for r in live["records"]:
-        if r.get("lat") is None:
+        if r.get("lat") is None or oid(r) in model_ids:     # a record the model has, even if PBDB has moved it
             continue
         key = (round(float(r["lat"]), 2), round(float(r["lng"]), 2))
         if key not in seen:
@@ -86,6 +93,8 @@ if live_p.exists():
                        "properties": {"records": len(rs), "taxa": sorted({r.get("accepted_name") or r.get("identified_name") for r in rs}),
                                       "formation": rs[0].get("formation", ""), "age": f"{rs[0].get('max_ma', '?')}–{rs[0].get('min_ma', '?')} Ma",
                                       "ref": f"{rs[0].get('ref_author', '')} {rs[0].get('ref_pubyr', '')}".strip(), "in_model": False}})
+    summary["new_places"] = extra
+    (S / "live.json").write_text(json.dumps(summary, indent=1))
 (S / "known.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": places}, ensure_ascii=False))
 # close-up terrain panels, made web-sized (the full PNGs stay in outputs/)
 from PIL import Image  # noqa: E402

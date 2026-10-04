@@ -1,0 +1,18 @@
+{
+ "checked": "2026-10-04T16:35Z",
+ "live": 28,
+ "model": 30,
+ "still_listed": 28,
+ "new_records": 0,
+ "dropped": [
+  {
+   "id": "occ:361674",
+   "taxon": "Omphalosaurus nevadanus"
+  },
+  {
+   "id": "occ:1419019",
+   "taxon": "Omphalosaurus nettarhynchus"
+  }
+ ],
+ "new_places": 0
+}

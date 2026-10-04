@@ -180,14 +180,16 @@ $('zoom').addEventListener('click', () => $('zoom').close());
 
 async function main(){
   const [targets, known, tri, checks] = await Promise.all(['site/targets.geojson','site/known.geojson','site/triassic.geojson','site/checks.json'].map(get));
-  let live = null; try { live = await get('site/pbdb_live.json'); } catch(e) {}
+  let live = null; try { live = await get('site/live.json'); } catch(e) {}
 
   // status box: the live PBDB check
-  const inModel = known.features.filter(f => f.properties.in_model).length;
   const newer = known.features.filter(f => !f.properties.in_model);
+  const gone = live ? live.dropped : [];
+  const names = [...new Set(gone.map(d => d.taxon.split(' ')[0]))];
   $('status').innerHTML = live
-    ? `<b>PBDB now lists ${live.records.length}</b> ichthyosaur occurrences in Nevada. The model was trained on ${checks.records} of them, at ${checks.places} places.<br>` +
-      (newer.length ? `<b>${newer.length} place${newer.length>1?'s':''}</b> in PBDB the model hasn't seen yet (shown with a dashed gold ring).` : `No new places since the model was trained.`) +
+    ? `<b>PBDB lists ${live.live}</b> ichthyosaur occurrences in Nevada today; the model was trained on ${live.model}, at ${checks.places} places. ` +
+      (live.new_records ? `<b>${live.new_records} record${live.new_records>1?'s are':' is'} new</b>` + (newer.length ? `, at ${newer.length} place${newer.length>1?'s':''} the model hasn't seen (dashed gold rings).` : ', all at places it knows.') : 'None are new.') +
+      (gone.length ? ` ${gone.length} of the model's records (<em>${names.join(', ')}</em>) are no longer filed under ichthyosaurs.` : '') +
       `<span class="when">Checked ${fmtDay(live.checked)} · every Monday</span>`
     : `Trained on ${checks.records} PBDB records at ${checks.places} places. <span class="when">The weekly PBDB check hasn't run yet.</span>`;
 
