@@ -38,38 +38,33 @@ for z in [p for p in files if p.suffix.lower() == ".zip"]:
     zipfile.ZipFile(z).extractall(z.with_suffix(""))
 shps = sorted(CACHE.rglob("*.shp"))
 print("shapefiles:", [str(s.relative_to(CACHE)) for s in shps])
-polys = []
-for s in shps:
-    try:
-        g = gpd.read_file(s)
-    except Exception as e:  # noqa: BLE001
-        print("  skip", s.name, e); continue
-    print(f"  {s.name}: {len(g)} {g.geom_type.unique().tolist()} cols={g.columns.tolist()[:20]}")
-    if (g.geom_type.isin(["Polygon", "MultiPolygon"])).all() and len(g) > 1000:
-        polys.append((s, g))
-s, geo = max(polys, key=lambda x: len(x[1]))
-print("geology layer:", s.name, len(geo), geo.crs)
-lab = next(c for c in geo.columns if c.upper() in ("ORIG_LABEL", "UNIT", "UNITSYMBOL", "LABEL", "MAP_UNIT", "PTYPE", "UNIT_LABEL", "SYMBOL"))
-print("label column:", lab)
+geo = gpd.read_file(next(CACHE.rglob("NevadaGeology.shp")))
+print("NevadaGeology:", len(geo), geo.crs, geo.columns.tolist())
+for c in ("FMATN", "L_NAME", "GEOLOGICFM", "STATEMAP"):
+    print(c, geo[c].astype(str).value_counts().head(15).to_dict())
+lab = "FMATN"
 labs = geo[lab].astype(str)
-tri = labs.str.contains("TR", regex=False)
-print("units with TR:", labs[tri].value_counts().to_dict())
+tri = labs.str.contains("TR", regex=False) | geo["GEOLOGICFM"].astype(str).str.contains(
+    "Triassic|Luning|Gabbs|Prida|Favret|Star Peak|Augusta|Natchez|Grantsville|Sunrise|Thaynes|Dunlap|Auld Lang|Grass Valley|Raspberry|Winnemucca|Dixie Valley|Tobin|Cane Spring|Excelsior", case=False, regex=True)
+show = geo[tri].assign(km2=geo[tri].to_crs(32611).area / 1e6).groupby([lab, "GEOLOGICFM", "L_NAME"], dropna=False).km2.sum().sort_values(ascending=False)
+print("Triassic-bearing units (km2):")
+print(show.head(80).to_string())
 g = geo[tri].to_crs(4326)
-g = g.dissolve(by=lab, as_index=False)
+g = g.dissolve(by=lab, as_index=False, aggfunc="first")
 g["geometry"] = g.geometry.simplify(0.0003)
-g[[lab, "geometry"]].rename(columns={lab: "unit"}).to_file(OUT / "triassic_units.geojson", driver="GeoJSON")
+g[[lab, "GEOLOGICFM", "L_NAME", "geometry"]].rename(columns={lab: "unit"}).to_file(OUT / "triassic_units.geojson", driver="GeoJSON")
 
 recs = pd.DataFrame(json.load(open(ROOT / "site" / "pbdb_live.json"))["records"])
 pts = gpd.GeoDataFrame(recs, geometry=gpd.points_from_xy(recs.lng.astype(float), recs.lat.astype(float)), crs=4326).to_crs(32611)
 gu = g.to_crs(32611)
 rows = []
+on = geo.to_crs(32611)
 for _, r in pts.iterrows():
     d = gu.distance(r.geometry) / 1000
     i = d.idxmin()
-    on = geo.to_crs(32611)
     hit = on[on.contains(r.geometry)]
     rows.append({"occ": r.occurrence_no, "formation": r.get("formation"), "lat": r.lat, "lng": r.lng, "prec": r.get("latlng_precision"),
-                 "on_unit": ";".join(hit[lab].astype(str)), "nearest_TR": gu.loc[i, lab], "km": round(float(d.min()), 2)})
+                 "on_unit": ";".join(hit[lab].astype(str) + ":" + hit["GEOLOGICFM"].astype(str)), "nearest_TR": gu.loc[i, lab], "km": round(float(d.min()), 2)})
 rep = pd.DataFrame(rows)
 print(rep.to_string())
 rep.to_csv(OUT / "records_geology.csv", index=False)

@@ -24,7 +24,7 @@ jobs:
         with: { python-version: '3.12' }
       - run: pip install -q geopandas pandas numpy scipy "scikit-learn==1.9.1" rasterio pillow pyproj shapely
       - name: Run tools/v4/${{ inputs.step }}
-        run: python tools/v4/${{ inputs.step }} 2>&1 | tee /tmp/v4.log
+        run: set -o pipefail; python tools/v4/${{ inputs.step }} 2>&1 | tee /tmp/v4.log
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
