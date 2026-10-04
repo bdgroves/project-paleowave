@@ -51,7 +51,8 @@ PAD = 1050                    # m of extra DEM around each tile, for the 1 km to
 TIER_A = (r"Prida|Favret|Augusta|Cane Sp|Natchez|Star Peak|Luning|Gabbs|Sunrise|Thaynes|Lower Triassic sedimentary")
 TIER_B = (r"Dun Glen|Winnemucca|Grass Valley|Raspberry|Tobin|Dixie Valley|Auld Lang Syne|Marine sedimentary rocks|"
           r"Candelaria|Osobb|Limestone and dolomite|shale, sand, and siltstone|upper subunit|lower subunit|intermediate subunit")
-FEATS = ["slope", "relief", "tpi300", "tpi1000", "north", "ndvi", "bsi", "carb", "iron", "dist_unit"]
+FEATS = ["slope", "relief", "tpi300", "tpi1000", "north", "ndvi", "bsi", "carb", "iron", "dist_unit",
+         "slope_450", "ndvi_450", "bsi_450", "carb_450", "iron_450"]
 T0 = time.time()
 
 
@@ -299,7 +300,10 @@ for k, (tx, ty) in enumerate(tiles):
     park = rasterize([(mapping(bisp), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool) if bisp.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), bool)
     F = {**t, **s2, "dist_unit": (ndimage.distance_transform_edt(onunit == 0) * RES).astype("float32")[PAD // RES:-(PAD // RES), PAD // RES:-(PAD // RES)]}
     # smooth to ~90 m so a point's features don't hinge on one cell (records are good to ~30-100 m at best)
-    F = {f: ndimage.uniform_filter(np.nan_to_num(v, nan=np.nanmedian(v) if np.isfinite(v).any() else 0), 3).astype("float32") for f, v in F.items()}
+    raw = {f: np.nan_to_num(v, nan=np.nanmedian(v) if np.isfinite(v).any() else 0) for f, v in F.items()}
+    F = {f: ndimage.uniform_filter(v, 3).astype("float32") for f, v in raw.items()}
+    # the same evidence averaged over ~450 m: is this a whole hillside of bare limestone, or one bright cell?
+    F |= {f + "_450": ndimage.uniform_filter(raw[f], 15).astype("float32") for f in ("slope", "ndvi", "bsi", "carb", "iron")}
     ok = inside & np.isfinite(F["ndvi"])
     tile_store[(tx, ty)] = {"F": F, "ok": ok, "tierA": tierA, "land": land, "park": park}
     rr, cc = np.where(ok)
@@ -375,9 +379,14 @@ evals = {}
 test_idx = np.where((places.has_feats & places.in_area).values)[0]
 # Ablations: the same forest given only some of the evidence, to see what's doing the work.
 SUBSETS = {"forest": FEATS, "forest_no_distance": [f for f in FEATS if f != "dist_unit"],
-           "forest_terrain": ["slope", "relief", "tpi300", "tpi1000", "north"], "forest_satellite": ["ndvi", "bsi", "carb", "iron"],
+           "forest_terrain": ["slope", "relief", "tpi300", "tpi1000", "north", "slope_450"],
+           "forest_satellite": ["ndvi", "bsi", "carb", "iron", "ndvi_450", "bsi_450", "carb_450", "iron_450"],
            "distance_only": ["dist_unit"]}
-for kind in ("logistic", "forest", "exposure", "forest_no_distance", "forest_terrain", "forest_satellite", "distance_only"):
+def pct_of(scores, ref_sorted):
+    return np.searchsorted(ref_sorted, scores, side="left") / len(ref_sorted)
+
+
+for kind in ("ensemble", "logistic", "forest", "exposure", "forest_no_distance", "forest_terrain", "forest_satellite", "distance_only"):
     fs = SUBSETS.get(kind, FEATS)
     rows = []
     for i in test_idx:
@@ -389,6 +398,17 @@ for kind in ("logistic", "forest", "exposure", "forest_no_distance", "forest_ter
         if kind == "exposure":
             s_p = float(exposure(P.iloc[[i]][FEATS].assign()).iloc[0])
             s_b = exposure(bg[FEATS]).to_numpy()
+        elif kind == "ensemble":
+            # forest and logistic regression, each turned into a percentile against the background, then averaged
+            Xtr = np.r_[P[keep][FEATS].to_numpy(), bg[FEATS].to_numpy()]
+            ytr = np.r_[np.ones(keep.sum()), np.zeros(len(bg))]
+            s_p, s_b = 0.0, np.zeros(len(bg))
+            for kk in ("forest", "logistic"):
+                m = make(kk).fit(Xtr, ytr)
+                b_ = m.predict_proba(bg[FEATS].to_numpy())[:, 1]
+                srt = np.sort(b_)
+                s_p += float(pct_of(m.predict_proba(P.iloc[[i]][FEATS].to_numpy())[:, 1], srt)[0]) / 2
+                s_b += pct_of(b_, srt) / 2
         else:
             Xtr = np.r_[P[keep][fs].to_numpy(), bg[fs].to_numpy()]
             ytr = np.r_[np.ones(keep.sum()), np.zeros(len(bg))]
@@ -402,9 +422,10 @@ for kind in ("logistic", "forest", "exposure", "forest_no_distance", "forest_ter
                    "top10": int((r.percentile >= 0.9).sum()), "top25": int((r.percentile >= 0.75).sum()), "n": len(r)}
     log(f"{kind}: held-out places' median percentile {evals[kind]['median_percentile']:.2f}; "
         f"top 10%: {evals[kind]['top10']}/{len(r)}; top 25%: {evals[kind]['top25']}/{len(r)}")
-# The model is fixed in advance as the forest on all evidence; the others are there for comparison.
-best = "forest"
-log("model: forest on all features (ablations above for comparison)")
+# The model is fixed in advance: forest and logistic regression averaged (the forest alone gives the
+# same top score to huge areas, so it can't rank targets); the rest are there for comparison.
+best = "ensemble"
+log("model: ensemble of forest and logistic regression (ablations above for comparison)")
 
 # geology alone: how many places does the rock filter catch, and how much of Nevada does it keep?
 geo_eval = {"places": int(len(places)), "in_area": int(places.in_area.sum()), "precise_in_area": int((places.in_area & places.precise).sum()),
@@ -412,14 +433,20 @@ geo_eval = {"places": int(len(places)), "in_area": int(places.in_area.sum()), "p
             "tierB_km2": round(units[units.tier == "B"].area.sum() / 1e6), "cells": N_CELLS}
 
 # ── 5. score every cell, pick targets ────────────────────────────────────
-final = None if best == "exposure" else make(best).fit(np.r_[Xp, Xb], np.r_[np.ones(len(Xp)), np.zeros(len(Xb))])
-if best == "logistic":
-    lr = final[-1]
-    evals["logistic_coef"] = dict(zip(FEATS, map(lambda v: round(float(v), 3), lr.coef_[0])))
-    log("coefficients (standardised):", evals["logistic_coef"])
-if best == "forest":
-    evals["forest_importance"] = dict(zip(FEATS, map(lambda v: round(float(v), 3), final.feature_importances_)))
-bg_scores = exposure(bg[FEATS]).to_numpy() if best == "exposure" else final.predict_proba(Xb)[:, 1]
+Xall, yall = np.r_[Xp, Xb], np.r_[np.ones(len(Xp)), np.zeros(len(Xb))]
+fin_f, fin_l = make("forest").fit(Xall, yall), make("logistic").fit(Xall, yall)
+evals["forest_importance"] = dict(zip(FEATS, map(lambda v: round(float(v), 3), fin_f.feature_importances_)))
+evals["logistic_coef"] = dict(zip(FEATS, map(lambda v: round(float(v), 3), fin_l[-1].coef_[0])))
+log("forest importance:", evals["forest_importance"])
+log("logistic coefficients (standardised):", evals["logistic_coef"])
+ref_f, ref_l = np.sort(fin_f.predict_proba(Xb)[:, 1]), np.sort(fin_l.predict_proba(Xb)[:, 1])
+
+
+def ens(X):
+    return (pct_of(fin_f.predict_proba(X)[:, 1], ref_f) + pct_of(fin_l.predict_proba(X)[:, 1], ref_l)) / 2
+
+
+bg_scores = ens(Xb)
 cands = []
 # coarse score raster for the map: 90 m, max of each 3x3 block
 gx0, gy1 = x0 - x0 % 90, y1 + (90 - y1 % 90)
@@ -430,7 +457,7 @@ for (tx, ty), st in tile_store.items():
     if not ok.any():
         continue
     D = pd.DataFrame({f: F[f][ok] for f in FEATS})
-    sc = exposure(D).to_numpy() if best == "exposure" else final.predict_proba(D.to_numpy())[:, 1]
+    sc = ens(D.to_numpy())
     S = np.full(ok.shape, np.nan, "float32")
     S[ok] = sc
     pct = np.searchsorted(np.sort(bg_scores), S) / len(bg_scores)
@@ -442,7 +469,7 @@ for (tx, ty), st in tile_store.items():
         r0, c0 = int((gy1 - (ty + TILE)) // 90), int((tx - gx0) // 90)
         sub = coarse[r0:r0 + n, c0:c0 + n]
         coarse[r0:r0 + sub.shape[0], c0:c0 + sub.shape[1]] = np.fmax(sub, blk[: sub.shape[0], : sub.shape[1]])
-    good = ok & (pct >= 0.98) & ~st["park"]
+    good = ok & (pct >= 0.97) & ~st["park"] & (st["land"] == 1)
     rr, cc = np.where(good)
     for r, c in zip(rr, cc):
         cands.append((float(pct[r, c]), tx + (c + 0.5) * RES, ty + TILE - (r + 0.5) * RES, int(st["land"][r, c]), bool(st["tierA"][r, c]),
@@ -456,8 +483,9 @@ with rasterio.open(OUT / "score_90m.tif", "w", driver="GTiff", width=W, height=H
 kx, ky = places.x.to_numpy(), places.y.to_numpy()
 picked = []
 LAND = {0: "unknown", 1: "BLM", 2: "Forest Service", 3: "private", 4: "other public"}
+quota = {True: 30, False: 10}                          # 30 targets in the ichthyosaur formations, 10 further afield
 for s, x, y, lc, ta, fv in cands:
-    if lc != 1:
+    if lc != 1 or quota[ta] == 0:
         continue
     if np.hypot(kx - x, ky - y).min() < 2000:
         continue
@@ -465,7 +493,8 @@ for s, x, y, lc, ta, fv in cands:
         continue
     picked.append({"x": x, "y": y, "percentile": round(s, 4), "land": LAND[lc], "tierA": ta,
                    "km_known": round(float(np.hypot(kx - x, ky - y).min() / 1000), 1), **fv})
-    if len(picked) == 40:
+    quota[ta] -= 1
+    if not any(quota.values()):
         break
 T = pd.DataFrame(picked)
 if len(T):
@@ -474,6 +503,7 @@ if len(T):
     T.insert(1, "lon", ll.x.round(5))
     unit_at = gpd.sjoin(gpd.GeoDataFrame(T, geometry=gpd.points_from_xy(T.x, T.y), crs=CRS), units[["L_NAME", "tier", "geometry"]], how="left", predicate="within")
     T["unit"] = unit_at.groupby(level=0).L_NAME.first().reindex(T.index).fillna("within 300 m of " + "mapped unit")
+    T = T.sort_values(["tierA", "percentile"], ascending=[False, False]).reset_index(drop=True)
     T.insert(0, "rank", range(1, len(T) + 1))
 T.to_csv(OUT / "targets.csv", index=False)
 json.dump({"model": best, "evals": evals, "geology": geo_eval, "features": FEATS,
