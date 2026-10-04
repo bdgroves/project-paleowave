@@ -7,69 +7,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.575,
+     "percentile": 0.684,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.945,
+     "percentile": 0.987,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.986,
+     "percentile": 0.581,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.594,
+     "percentile": 0.428,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.996,
+     "percentile": 0.974,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.883,
+     "percentile": 0.991,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.773,
+     "percentile": 0.3,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.193,
+     "percentile": 0.428,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.809,
+     "percentile": 0.849,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.809,
+   "median_percentile": 0.684,
    "top10": 3,
-   "top25": 6,
+   "top25": 4,
    "n": 9
   },
   "forest": {
@@ -78,69 +78,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.952,
+     "percentile": 0.758,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.995,
+     "percentile": 0.779,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.931,
+     "percentile": 0.805,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.928,
+     "percentile": 0.0,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.938,
+     "percentile": 0.691,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.966,
+     "percentile": 0.709,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.954,
+     "percentile": 0.657,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.0,
+     "percentile": 0.583,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.728,
+     "percentile": 0.706,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.938,
-   "top10": 7,
-   "top25": 7,
+   "median_percentile": 0.706,
+   "top10": 0,
+   "top25": 3,
    "n": 9
   },
   "exposure": {
@@ -149,67 +149,67 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.417,
+     "percentile": 0.081,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.602,
+     "percentile": 0.579,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.627,
+     "percentile": 0.292,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.607,
+     "percentile": 0.3,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.647,
+     "percentile": 0.598,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.488,
+     "percentile": 0.589,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.515,
+     "percentile": 0.01,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.543,
+     "percentile": 0.458,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.609,
+     "percentile": 0.447,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.602,
+   "median_percentile": 0.447,
    "top10": 0,
    "top25": 0,
    "n": 9
@@ -220,69 +220,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.937,
+     "percentile": 0.755,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.988,
+     "percentile": 0.776,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.913,
+     "percentile": 0.774,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.916,
+     "percentile": 0.363,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.92,
+     "percentile": 0.702,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.972,
+     "percentile": 0.662,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.934,
+     "percentile": 0.648,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.0,
+     "percentile": 0.774,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.763,
+     "percentile": 0.732,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.92,
-   "top10": 7,
-   "top25": 8,
+   "median_percentile": 0.732,
+   "top10": 0,
+   "top25": 4,
    "n": 9
   },
   "forest_terrain": {
@@ -291,69 +291,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.807,
+     "percentile": 0.433,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.959,
+     "percentile": 0.378,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.503,
+     "percentile": 0.452,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.507,
+     "percentile": 0.38,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.471,
+     "percentile": 0.462,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.726,
+     "percentile": 0.484,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.529,
+     "percentile": 0.548,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.431,
+     "percentile": 0.36,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.566,
+     "percentile": 0.747,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.529,
-   "top10": 1,
-   "top25": 2,
+   "median_percentile": 0.452,
+   "top10": 0,
+   "top25": 0,
    "n": 9
   },
   "forest_satellite": {
@@ -362,56 +362,56 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.869,
+     "percentile": 0.838,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.902,
+     "percentile": 0.913,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.881,
+     "percentile": 0.789,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.86,
+     "percentile": 0.0,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.86,
+     "percentile": 0.759,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.917,
+     "percentile": 0.668,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.908,
+     "percentile": 0.5,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.0,
+     "percentile": 0.644,
      "trained_on": 7
     },
     {
@@ -422,9 +422,9 @@
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.869,
-   "top10": 3,
-   "top25": 7,
+   "median_percentile": 0.668,
+   "top10": 1,
+   "top25": 4,
    "n": 9
   },
   "distance_only": {
@@ -433,21 +433,21 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.612,
+     "percentile": 0.611,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.612,
+     "percentile": 0.611,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.612,
+     "percentile": 0.611,
      "trained_on": 7
     },
     {
@@ -461,21 +461,21 @@
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 1.0,
+     "percentile": 0.613,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.0,
+     "percentile": 0.613,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.612,
+     "percentile": 0.998,
      "trained_on": 7
     },
     {
@@ -489,26 +489,26 @@
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.612,
+     "percentile": 0.611,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.612,
+   "median_percentile": 0.611,
    "top10": 1,
    "top25": 1,
    "n": 9
   },
   "forest_importance": {
-   "slope": 0.195,
-   "relief": 0.151,
-   "tpi300": 0.016,
-   "tpi1000": 0.023,
-   "north": 0.008,
-   "ndvi": 0.07,
-   "bsi": 0.175,
-   "carb": 0.302,
-   "iron": 0.018,
-   "dist_unit": 0.042
+   "slope": 0.163,
+   "relief": 0.16,
+   "tpi300": 0.04,
+   "tpi1000": 0.065,
+   "north": 0.02,
+   "ndvi": 0.032,
+   "bsi": 0.165,
+   "carb": 0.266,
+   "iron": 0.042,
+   "dist_unit": 0.045
   }
  },
  "geology": {
@@ -697,5 +697,5 @@
  "targets": 40,
  "tiles": 274,
  "tiles_missing": 0,
- "seconds": 896
+ "seconds": 361
 }
