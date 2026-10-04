@@ -3,7 +3,7 @@ name = "project-paleowave"
 version = "0.1.0"
 description = "Mapping Nevada's Ancient Seas"
 channels = ["conda-forge"]
-platforms = ["win-64"]
+platforms = ["win-64", "linux-64"]
 
 [dependencies]
 python = "3.12.*"
@@ -29,3 +29,23 @@ httpx = "*"
 
 [tasks]
 lab = "jupyter lab"
+
+# The page's data: light enough for any platform (and for CI, which uses pip)
+[feature.site]
+platforms = ["win-64", "linux-64"]
+
+[feature.site.dependencies]
+python = "3.12.*"
+geopandas = "*"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+pillow = "*"
+
+[feature.site.tasks]
+pbdb = "python tools/pbdb.py"
+build = "python tools/build.py"
+check = "python tools/check.py"
+
+[environments]
+site = { features = ["site"], no-default-feature = true }

@@ -1,0 +1,31 @@
+{
+ "records": 30,
+ "places": 18,
+ "largest_place_records": 6,
+ "v12": {
+  "records": 27,
+  "places": 16,
+  "background": 982,
+  "recall_by_record": 0.889,
+  "recall_by_place_records": 0.259,
+  "places_found": 7,
+  "background_flagged": 0.02,
+  "auc_by_record": 0.982,
+  "auc_by_place": 0.874
+ },
+ "tri": {
+  "fossil_ratio": 7.72,
+  "background_ratio": 1.89,
+  "fossil_median": 1.32,
+  "background_median": 0.13,
+  "background_elev_zero": 25
+ },
+ "geology": {
+  "targets_on_unit": 0,
+  "targets": 50,
+  "target_median_km": 18.3,
+  "target_max_km": 166.4,
+  "records_on_unit": 7,
+  "record_median_km": 7.3
+ }
+}

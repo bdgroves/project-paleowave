@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaleoWave: where Nevada's ichthyosaurs might still be buried</title>
+<meta name="description" content="A terrain model that suggests where central Nevada's Triassic ichthyosaurs might still be exposed, rechecked honestly: what it can do, what it can't, and 50 places to look.">
+<meta property="og:title" content="PaleoWave: where Nevada's ichthyosaurs might still be buried">
+<meta property="og:description" content="A terrain model of central Nevada's ichthyosaur country, rechecked honestly, with 50 places to look.">
+<meta property="og:image" content="https://brooksgroves.com/project-paleowave/assets/paleowave_flag_social.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--sea:#13524f;--deep:#0d2b1f;--sand:#e0ad44;--sand-2:#f3dca4;--bone:#faf6ec;--paper:#f4efe2;--ink:#1d2421;--stone:#6d6a60;--mist:#d9d2c0;
+  --basin:#2c7a6b;--slope:#c58a2a;--ridge:#a23b2c;--sans:'Barlow Condensed',system-ui,sans-serif;--serif:'Source Serif 4',Georgia,serif;--mono:'DM Mono',ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#121a17;--bone:#18221f;--ink:#e9e4d6;--stone:#a39e8f;--mist:#2d3934;--sand-2:#3a3320}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font:17px/1.65 var(--serif)}
+a{color:var(--sea)} @media (prefers-color-scheme:dark){a{color:var(--sand)}}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.flag{background:var(--sand);color:var(--deep);border-bottom:10px solid var(--sea)}
+.top{display:flex;justify-content:space-between;gap:12px;padding:14px 0;font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.top a{color:var(--deep);text-decoration:none}
+header.hero{padding:26px 0 30px;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;align-items:end}
+.hero h1{font:800 clamp(52px,9vw,104px)/.88 var(--sans);letter-spacing:.01em;text-transform:uppercase;color:var(--sea)}
+.hero .k{font:600 15px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.hero p.dek{font-size:clamp(18px,2.2vw,22px);line-height:1.45;margin-top:14px;max-width:34ch}
+.status{background:var(--bone);border:2px solid var(--deep);padding:14px 16px;font:13px/1.6 var(--mono);color:var(--ink)}
+.status b{font-weight:500;color:var(--sea)} @media (prefers-color-scheme:dark){.status b{color:var(--sand)}}
+.status .when{color:var(--stone);display:block;margin-top:6px}
+section{padding:42px 0 6px}
+h2{font:800 clamp(30px,4vw,44px)/1 var(--sans);text-transform:uppercase;color:var(--sea);margin-bottom:12px;letter-spacing:.01em}
+@media (prefers-color-scheme:dark){h2{color:var(--sand)}}
+h3{font:600 22px/1.2 var(--sans);text-transform:uppercase;letter-spacing:.03em;margin:0 0 6px}
+p+p{margin-top:.8em}
+.lede{max-width:68ch}
+#map{height:min(70vh,620px);border:2px solid var(--deep);margin-top:16px;background:#dfd8c6}
+.key{display:flex;flex-wrap:wrap;gap:8px 18px;font:12.5px var(--mono);color:var(--stone);margin-top:10px}
+.key i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.key i.sq{border-radius:2px;border:none;box-shadow:none}
+.leaflet-popup-content{font:14px/1.5 var(--serif);margin:12px 14px}
+.leaflet-popup-content b{font-family:var(--sans);font-size:17px;text-transform:uppercase;letter-spacing:.02em}
+.leaflet-popup-content .m{font:11.5px var(--mono);color:#6d6a60}
+.leaflet-popup-content img{width:100%;margin-top:8px;border:1px solid #ccc;cursor:zoom-in}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}
+.card{background:var(--bone);border-top:6px solid var(--sand);padding:16px 18px 18px}
+.card .big{font:800 46px/1 var(--sans);color:var(--sea);margin:4px 0 6px}
+@media (prefers-color-scheme:dark){.card .big{color:var(--sand)}}
+.card .was{font:12.5px var(--mono);color:var(--stone);text-decoration:line-through}
+.card p{font-size:15.5px}
+.note{font-size:15px;color:var(--stone);max-width:72ch;margin-top:14px}
+table{width:100%;border-collapse:collapse;margin-top:16px;font:13.5px var(--mono)}
+th{font:600 14px var(--sans);text-transform:uppercase;letter-spacing:.05em;text-align:left;border-bottom:2px solid var(--deep);padding:6px 8px;color:var(--stone)}
+td{padding:7px 8px;border-bottom:1px solid var(--mist);white-space:nowrap}
+td.wrap{white-space:normal}
+tr:hover td{background:var(--bone)}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;font:12px var(--mono);color:#fff}
+.tbl{overflow-x:auto}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:16px}
+.gallery figure{background:var(--bone);border:1px solid var(--mist)}
+.gallery img{width:100%;display:block;aspect-ratio:2.8/1;object-fit:cover;cursor:zoom-in}
+.gallery figcaption{font:12px/1.45 var(--mono);color:var(--stone);padding:6px 8px 8px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.ages{margin-top:14px;border-left:4px solid var(--sand);padding-left:14px}
+.ages div{padding:6px 0;border-bottom:1px dashed var(--mist)}
+.ages b{font:600 18px var(--sans);text-transform:uppercase;letter-spacing:.03em}
+.ages span{font:12.5px var(--mono);color:var(--stone);display:block}
+.callout{background:var(--sea);color:#f6efd9;padding:20px 22px;margin-top:16px}
+.callout h3{color:var(--sand)}
+.callout a{color:var(--sand)}
+dialog{border:none;padding:0;max-width:96vw;background:transparent}
+dialog::backdrop{background:rgba(5,15,10,.82)}
+dialog img{max-width:96vw;max-height:88vh;display:block}
+dialog p{font:12.5px var(--mono);color:#e9e4d6;padding:8px 0}
+footer{margin-top:50px;background:var(--deep);color:#cfc6ae;padding:26px 0 36px;font:12.5px/1.8 var(--mono)}
+footer a{color:var(--sand)}
+@media (max-width:820px){header.hero,.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}#map{height:62vh}}
+</style>
+</head>
+<body>
+<div class="flag">
+  <div class="wrap">
+    <div class="top"><a href="https://brooksgroves.com">Brooks Groves</a><a href="https://github.com/bdgroves/project-paleowave">The code ↗</a></div>
+    <header class="hero">
+      <div>
+        <div class="k">Triassic ichthyosaurs · central Nevada · a terrain model</div>
+        <h1>Paleo&shy;Wave</h1>
+        <p class="dek">Where might central Nevada's ichthyosaurs still be buried? A model of the terrain where they've been found, fifty places it points to, and an honest look at how far to trust it.</p>
+      </div>
+      <div class="status" id="status">Loading…</div>
+    </header>
+  </div>
+</div>
+
+<main class="wrap">
+  <section>
+    <h2>The map</h2>
+    <p class="lede">Two hundred and forty million years ago central Nevada was the floor of a warm sea, and ichthyosaurs, dolphin-shaped marine reptiles up to the size of a bus, swam in it. Their bones are in the limestone of ranges like the Humboldt, Augusta and Shoshone Mountains, and paleontologists have recorded them at a handful of places. PaleoWave learned what the ground looks like at those places and scored other ground by how alike it looks. Tap any dot.</p>
+    <div id="map" role="region" aria-label="Map of known ichthyosaur places and PaleoWave's targets in central Nevada"></div>
+    <div class="key">
+      <span><i style="background:#0d2b1f;border-color:#e0ad44"></i>Known ichthyosaur place (PBDB)</span>
+      <span><i style="background:var(--basin)"></i>Target in a basin</span>
+      <span><i style="background:var(--slope)"></i>Target on a slope</span>
+      <span><i style="background:var(--ridge)"></i>Target on a ridge</span>
+      <span><i class="sq" style="background:rgba(19,82,79,.35)"></i>Triassic marine rocks, state geologic map</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>How far to trust it</h2>
+    <p class="lede">I built PaleoWave early on, and when I came back to it this fall I re-checked its numbers from the files in the repository. Three things it claimed held up less well than they looked. Here's what changed, with the arithmetic in <a href="https://github.com/bdgroves/project-paleowave/blob/main/tools/check.py">tools/check.py</a> so anyone can rerun it.</p>
+    <div class="cards" id="cards"></div>
+    <p class="note" id="checknote"></p>
+  </section>
+
+  <section>
+    <h2>Fifty places to look</h2>
+    <p class="lede">The current model (v3) splits the north (the Prida and Favret rocks, north of 39.5°N) from the south (Luning and Gabbs), and scores terrain on elevation, slope, aspect, ruggedness and topographic position: whether a spot sits in a basin or on a ridge. Bones end up where the sea floor was, and they come to light where erosion is stripping it; basins and lower slopes score better than ridge crests. Treat these as places to go and look, not as predictions.</p>
+    <div class="tbl"><table id="targets"><thead><tr><th>#</th><th>Where</th><th>Score</th><th>Setting</th><th>Nearest known</th><th>From mapped Triassic</th><th>Close-up</th></tr></thead><tbody></tbody></table></div>
+    <p class="note">Score is the v3 random forest's probability, 0 to 1. "From mapped Triassic" is the distance to the Triassic marine units on the state's 1:500,000 geologic map, which is too coarse to rule a place in or out (most known sites miss it too). The full list, with every column, is <a href="https://github.com/bdgroves/project-paleowave/blob/main/data/model/paleowave_v3_top50.csv">paleowave_v3_top50.csv</a>; GPX and KMZ files for a GPS are in <a href="https://github.com/bdgroves/project-paleowave/tree/main/outputs">outputs/</a>.</p>
+  </section>
+
+  <section>
+    <h2>Close-ups</h2>
+    <p class="lede">For twenty of the targets I pulled 3DEP elevation at about 15 m and drew three panels each: a hillshade, the topographic position (red for ridges, blue for valleys) and slope. The star is the target. They're the quickest way to see whether a high score is sitting in the kind of place bones get exposed.</p>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Nevada's ichthyosaurs</h2>
+      <p>Nevada's ichthyosaur rocks span most of the Triassic, and they're not one formation but several, from different times and places on what was the western edge of Pangaea.</p>
+      <div class="ages">
+        <div><b>Prida &amp; Favret</b><span>Middle Triassic, about 245–237 million years ago · Humboldt Range, Augusta Mountains</span><em>Cymbospondylus</em>, and <em>Thalattoarchon</em>, one of the first marine reptiles that could hunt prey as big as itself.</div>
+        <div><b>Luning</b><span>Late Triassic, about 230–215 million years ago · Shoshone Mountains</span><em>Shonisaurus popularis</em>, Nevada's state fossil, the great ichthyosaurs of Berlin–Ichthyosaur State Park.</div>
+        <div><b>Gabbs</b><span>Latest Triassic · Gabbs Valley Range</span>A single record in the training data.</div>
+      </div>
+      <p class="note">Two corrections to the old README: Luning and Gabbs are Late Triassic, not Middle Triassic equivalents of the Prida; and <em>Shonisaurus popularis</em>, though huge, isn't the largest Triassic ichthyosaur known. Larger ones have since been described from Canada and Britain.</p>
+    </div>
+    <div>
+      <h2>If you go</h2>
+      <div class="callout">
+        <h3>Look, photograph, report. Don't collect.</h3>
+        <p>Vertebrate fossils on federal land (most of this country is BLM) can only be collected under a permit, under the Paleontological Resources Preservation Act. Collecting at Berlin–Ichthyosaur State Park isn't allowed at all. If you find bone, photograph it in place with something for scale, note the coordinates, and tell the BLM field office. A find that stays in the ground with good notes is worth far more to science than one in a backpack.</p>
+        <p>This is remote, hot, roadless country. Carry more water than you think, tell someone your route, and don't count on a phone signal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's next</h2>
+    <p class="lede">The fixes are clear enough. Score the whole map with v3 instead of re-ranking the old candidate list. Test it on places held out together (and on whole ranges), not single records. Swap the 1:500,000 geology for the 1:250,000 county maps, so "is this even Triassic rock?" can become a real filter. And add the exact locality data museums hold for the Augusta Mountains specimens, which I've asked the Cincinnati Museum Center for; the Field Museum is next. Until then, this is a well-made guess with its homework shown.</p>
+  </section>
+</main>
+
+<dialog id="zoom"><img alt=""><p></p></dialog>
+
+<footer>
+  <div class="wrap">
+    Data: <a href="https://paleobiodb.org">Paleobiology Database</a> (checked weekly) · USGS 3DEP elevation · Nevada Bureau of Mines and Geology state geologic map via the USGS State Geologic Map Compilation · literature from Merriam (1906, 1908) to Klein et al. (2020).<br>
+    Basemap: Esri World Topographic Map. Code, notebooks and every number on this page: <a href="https://github.com/bdgroves/project-paleowave">github.com/bdgroves/project-paleowave</a>. More projects at <a href="https://brooksgroves.com">brooksgroves.com</a>.
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const COL = {basin:'#2c7a6b', slope:'#c58a2a', ridge:'#a23b2c'};
+const get = async u => { const r = await fetch(u + '?t=' + Date.now(), {cache:'no-store'}); if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); };
+const fmtDay = iso => { const [y,m,d] = iso.slice(0,10).split('-').map(Number); return new Date(y, m-1, d).toLocaleDateString('en-US', {month:'long', day:'numeric', year:'numeric'}); };
+const ll = c => `${c[1].toFixed(3)}°N ${Math.abs(c[0]).toFixed(3)}°W`;
+
+function zoom(src, cap){ const d = $('zoom'); d.querySelector('img').src = src; d.querySelector('p').textContent = cap; d.showModal(); }
+$('zoom').addEventListener('click', () => $('zoom').close());
+
+async function main(){
+  const [targets, known, tri, checks] = await Promise.all(['site/targets.geojson','site/known.geojson','site/triassic.geojson','site/checks.json'].map(get));
+  let live = null; try { live = await get('site/pbdb_live.json'); } catch(e) {}
+
+  // status box: the live PBDB check
+  const inModel = known.features.filter(f => f.properties.in_model).length;
+  const newer = known.features.filter(f => !f.properties.in_model);
+  $('status').innerHTML = live
+    ? `<b>PBDB now lists ${live.records.length}</b> ichthyosaur occurrences in Nevada. The model was trained on ${checks.records} of them, at ${checks.places} places.<br>` +
+      (newer.length ? `<b>${newer.length} place${newer.length>1?'s':''}</b> in PBDB the model hasn't seen yet (shown with a dashed gold ring).` : `No new places since the model was trained.`) +
+      `<span class="when">Checked ${fmtDay(live.checked)} · every Monday</span>`
+    : `Trained on ${checks.records} PBDB records at ${checks.places} places. <span class="when">The weekly PBDB check hasn't run yet.</span>`;
+
+  // map
+  const map = L.map('map', {scrollWheelZoom:false}).setView([39.6, -117.8], 7);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+    {maxZoom:16, attribution:'Basemap © Esri, USGS, NOAA'}).addTo(map);
+  L.geoJSON(tri, {style:{color:'#13524f', weight:0.6, fillColor:'#13524f', fillOpacity:0.28}, interactive:false}).addTo(map);
+  L.geoJSON(known, {pointToLayer:(f, latlng) => L.circleMarker(latlng, {radius: 5 + Math.sqrt(f.properties.records) * 2.2,
+      color:'#e0ad44', weight: f.properties.in_model ? 2.5 : 4, dashArray: f.properties.in_model ? null : '3 3', fillColor:'#0d2b1f', fillOpacity:.95}),
+    onEachFeature:(f, l) => { const p = f.properties; l.bindPopup(`<b>Known place</b><div class="m">${ll(f.geometry.coordinates)} · ${esc(p.formation)} · ${esc(p.age)}</div>
+      ${p.records} PBDB record${p.records>1?'s':''}: <em>${p.taxa.map(esc).join(', ')}</em>${p.in_model?'':'<br><b style="font-size:13px">Not in the model yet</b>'}
+      <div class="m" style="margin-top:6px">${esc(p.ref)}</div>`); }}).addTo(map);
+  L.geoJSON(targets, {pointToLayer:(f, latlng) => L.circleMarker(latlng, {radius: 3 + f.properties.score * 9, color:'#fff', weight:1.2,
+      fillColor: COL[f.properties.setting], fillOpacity:.9}),
+    onEachFeature:(f, l) => { const p = f.properties; l.bindPopup(`<b>Target #${p.rank}</b><div class="m">${ll(f.geometry.coordinates)} · ${p.elev_m.toLocaleString()} m · slope ${p.slope}°</div>
+      Score <b style="font-size:15px">${p.score.toFixed(2)}</b> · ${p.setting} (TPI ${p.tpi > 0 ? '+' : ''}${p.tpi} m)<br>
+      ${p.km_known} km from the nearest known place · ${p.km_triassic ? p.km_triassic + ' km from' : 'on'} the mapped Triassic
+      ${p.panel ? `<img src="site/panels/${p.panel}.jpg" alt="Terrain close-up ${p.panel}" onclick="zoom('outputs/lidar_${p.panel}.png','${p.panel} · target #${p.rank}')">` : ''}`, {maxWidth:340}); }}).addTo(map);
+
+  // honesty cards
+  const v = checks.v12, g = checks.geology, t = checks.tri;
+  const cards = [
+    {k:'Repeat records', big:`${v.places_found} of ${v.places}`, was:`claimed ${Math.round(v.recall_by_record*100)}% found`,
+     p:`The ${checks.records} training records sit at only ${checks.places} places; one spot holds ${checks.largest_place_records}. Testing by leaving out one record left its twins in training. Leaving out whole places, the v1/v2 model recognises ${v.places_found} of ${v.places} it hadn't seen (${Math.round(v.recall_by_place_records*100)}% of records), not ${Math.round(v.recall_by_record*100)}%.`},
+    {k:'Ruggedness, measured twice', big:`${t.fossil_ratio} vs ${t.background_ratio}`, was:'"strongest predictor"',
+     p:`Ruggedness per unit of slope: ${t.fossil_ratio} at the fossil sites, ${t.background_ratio} at the comparison points. In v1 and v2, ruggedness at the fossil sites came from an 8 m DEM and one formula, and at the comparison points from an 18 m fetch and another. Set against slope, the two don't share a scale, so the top feature was partly measuring the measurement. v3 re-sampled everything from the same rasters, but it re-ranked the candidates v1 and v2 had found.`},
+    {k:'Inside the formation?', big:`${g.targets_on_unit} of ${g.targets}`, was:'"every pixel within the formation"',
+     p:`None of the fifty targets is on the Triassic marine rocks of the state geologic map; the median is ${g.target_median_km} km away. That map is coarse: only ${g.records_on_unit} of the ${checks.records} known records land on it either. So the formation wasn't a filter, and can't be one until a finer map is used.`},
+  ];
+  $('cards').innerHTML = cards.map(c => `<div class="card"><h3>${c.k}</h3><div class="big">${c.big}</div><div class="was">${esc(c.was)}</div><p>${c.p}</p></div>`).join('');
+  $('checknote').innerHTML = `What still holds: the model separates fossil terrain from random terrain well when tested on whole held-out places (AUC ${v.auc_by_place}, against ${v.auc_by_record} the old way), and it flags only ${Math.round(v.background_flagged*100)}% of random comparison points. It has learned something real about where the known sites sit. It just knows ${checks.places} places, and none of its targets has been walked yet.`;
+
+  // targets table and gallery
+  const rows = targets.features.map(f => ({...f.properties, c: f.geometry.coordinates}));
+  $('targets').querySelector('tbody').innerHTML = rows.slice(0, 20).map(p => `<tr>
+    <td>${p.rank}</td><td>${ll(p.c)}</td><td>${p.score.toFixed(2)}</td>
+    <td><span class="pill" style="background:${COL[p.setting]}">${p.setting}</span></td>
+    <td>${p.km_known} km</td><td>${p.km_triassic} km</td>
+    <td>${p.panel ? `<a href="#" onclick="zoom('outputs/lidar_${p.panel}.png','${p.panel} · target #${p.rank}');return false">${p.panel}</a>` : '–'}</td></tr>`).join('')
+    + `<tr><td colspan="7" class="wrap" style="color:var(--stone)">…and 30 more on the map.</td></tr>`;
+  $('gallery').innerHTML = rows.filter(p => p.panel).map(p => `<figure><img loading="lazy" src="site/panels/${p.panel}.jpg" alt="Terrain close-up ${p.panel}"
+      onclick="zoom('outputs/lidar_${p.panel}.png','${p.panel} · target #${p.rank}')"><figcaption>Target #${p.rank} · ${p.panel} · ${p.setting}, TPI ${p.tpi > 0 ? '+' : ''}${p.tpi} m · score ${p.score.toFixed(2)}</figcaption></figure>`).join('');
+}
+main().catch(e => { $('status').textContent = 'Could not load the data: ' + e.message; });
+</script>
+</body>
+</html>

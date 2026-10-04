@@ -1,0 +1,39 @@
+name: PaleoWave page data
+
+on:
+  schedule:
+    - cron: '17 13 * * 1'          # Mondays, 06:17 Pacific
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/**', 'data/model/**', 'data/geology/**', 'outputs/lidar_*.png', '.github/workflows/paleowave.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paleowave
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q geopandas pandas numpy scikit-learn pillow
+      - name: Check PBDB for Nevada ichthyosaurs (keeps last week's file if PBDB doesn't answer)
+        run: python tools/pbdb.py || echo "::warning::PBDB didn't answer; keeping the last check"
+      - name: Build the page's data
+        run: python tools/build.py
+      - name: Re-check the model's numbers
+        run: python tools/check.py > /dev/null
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site
+          git diff --staged --quiet && exit 0
+          git commit -q -m "page data: PBDB check $(date -u +%F)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
