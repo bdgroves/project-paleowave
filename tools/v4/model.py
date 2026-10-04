@@ -324,24 +324,19 @@ def cell_at(x, y):
     return st, r, c
 
 
-def feats_near(x, y, radius=90):
-    """Features at the best-exposed cell within `radius` m of a record (coordinates carry error)."""
-    out = None
-    for dx in range(-radius, radius + 1, RES):
-        for dy in range(-radius, radius + 1, RES):
-            got = cell_at(x + dx, y + dy)
-            if got is None:
-                continue
-            st, r, c = got
-            v = {f: float(st["F"][f][r, c]) for f in FEATS}
-            if out is None or v["bsi"] > out["bsi"]:
-                out = v
-    return out
+def feats_near(x, y, radius=None):
+    """Features at the record's own cell (already smoothed over 90 m). Picking the barest cell nearby
+    would favour the known places over the random background cells, which get no such help."""
+    got = cell_at(x, y)
+    if got is None:
+        return None
+    st, r, c = got
+    return {f: float(st["F"][f][r, c]) for f in FEATS}
 
 
 pres = []
 for _, p in places.iterrows():
-    v = feats_near(p.x, p.y, 90 if p.precise else 450)
+    v = feats_near(p.x, p.y)
     pres.append(v)
 places["has_feats"] = [v is not None for v in pres]
 P = pd.DataFrame([v if v else {f: np.nan for f in FEATS} for v in pres])
