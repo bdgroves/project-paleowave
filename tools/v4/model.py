@@ -59,10 +59,10 @@ def log(*a):
     print(f"[{time.time() - T0:6.0f}s]", *a, flush=True)
 
 
-def fetch(url, data=None, timeout=180, tries=4):
+def fetch(url, data=None, timeout=180, tries=4, ctype=None):
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, data=data, headers=UA)
+            req = urllib.request.Request(url, data=data, headers={**UA, **({"Content-Type": ctype} if ctype else {})})
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
         except Exception as e:  # noqa: BLE001
@@ -164,8 +164,10 @@ def s2_tile(tx, ty):
     body = json.dumps({"collections": ["sentinel-2-l2a"], "bbox": list(map(float, bb)), "limit": 40,
                        "datetime": "2023-06-15T00:00:00Z/2025-09-30T00:00:00Z",
                        "query": {"eo:cloud_cover": {"lt": 5}}, "sortby": [{"field": "properties.eo:cloud_cover", "direction": "asc"}]}).encode()
-    js = json.loads(fetch(STAC, data=body) or b"{}")
+    js = json.loads(fetch(STAC, data=body, ctype="application/json") or b"{}")
     items = [i for i in js.get("features", []) if int(i["properties"]["datetime"][5:7]) in (6, 7, 8, 9)]
+    if not items:
+        log("  STAC: no scenes", tx, ty, str(js)[:160])
     # prefer scenes whose footprint covers the tile centre, then least cloud; three scenes, different dates
     cx, cy = (bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2
     from shapely.geometry import Point, shape
