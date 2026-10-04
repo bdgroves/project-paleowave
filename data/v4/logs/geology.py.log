@@ -47,24 +47,119 @@ files: 175
    Metadata/TRGridMeta.txt 13955
    Readmefile.txt 8229
 shapefiles: ['Database files/Biostratigraphy/ConodontSamples.shp', 'Database files/Cities/CITIES_P.shp', 'Database files/Contours/CTOUR2.shp', 'Database files/Counties/NEVADACOUNTIES.shp', 'Database files/Geology/NevadaGeology.shp', 'Database files/Geology/StatewideFaults.shp', 'Database files/Geology/StatewideGeoBoundaries.shp', 'Database files/Lakes/lake_100.shp', 'Database files/PublicLandSurvey/plss100k.shp', 'Database files/PublicLandSurvey/tr100grid.shp', 'Database files/Quadrangles/NVQDP.shp', 'Database files/Quadrangles/nv_100kquads.shp', 'Database files/Resources/mrds-fUS32.shp', 'Database files/Rivers/nevadarivers.shp', 'Database files/Roads/ROADS_A.shp']
-  ConodontSamples.shp: 2617 ['Point'] cols=['ID', 'State', 'Min75Quad', 'LatDeg', 'LatMin', 'LongDeg', 'LongMin', 'LocDesc', 'AgeText', 'AgeMax', 'AgeMin', 'Formation', 'LithDesc', 'CAImin', 'CAImax', 'CAItext', 'FieldNo', 'USGSNo', 'EandRNo', 'Organizati']
-  CITIES_P.shp: 101 ['Point'] cols=['AREA', 'PERIMETER', 'NV_CITYU_', 'NV_CITYU_I', 'NAME', 'SYMBOL', 'geometry']
-  CTOUR2.shp: 41336 ['LineString'] cols=['ID', 'CONTOUR', 'geometry']
-  NEVADACOUNTIES.shp: 17 ['Polygon'] cols=['COUNTYNAME', 'COUNTYSEAT', 'DATASOURCE', 'DATASOURC1', 'ID', 'COUNTYABBR', 'geometry']
-  NevadaGeology.shp: 38696 ['Polygon', 'MultiPolygon', nan] cols=['AREA', 'PERIMETER', 'FMATN', 'L_NAME', 'GEOLOGICFM', 'STATEMAP', 'County', 'BioAgeMax', 'BioAgeMin', 'ModPoly', 'Notes', 'Refs', 'Reviewed', 'Shape_Leng', 'Shape_Area', 'geometry']
-  StatewideFaults.shp: 54713 ['LineString', 'MultiLineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'ELK_F_', 'ELK_F_ID', 'F_CODE', 'F_TYPE', 'F_MOVE', 'geometry']
-  StatewideGeoBoundaries.shp: 105265 ['LineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'ELK_G_', 'ELK_G_ID', 'C_CODE', 'C_TYPE', 'geometry']
-  lake_100.shp: 2007 ['Polygon'] cols=['NAME', 'TYPE', 'TYPE_CODE', 'AREA', 'ACRES', 'HECTARES', 'PERIMETER', 'geometry']
-  plss100k.shp: 111295 ['Polygon'] cols=['AREA', 'PERIMETER', 'PLSS100K_', 'PLSS100K_I', 'TOWNSHIP', 'RANGE', 'SECTION', 'LRMTRS', 'TOWNRANGE', 'geometry']
-  tr100grid.shp: 3643 ['Polygon'] cols=['AREA', 'PERIMETER', 'TR100GRID_', 'TR100GRID_', 'DATA', 'SURVEY_TYP', 'geometry']
-  NVQDP.shp: 2348 ['Polygon'] cols=['AREA', 'PERIMETER', 'NVQD_', 'NVQD_ID', 'QUAD_CODE', 'LAT_SE', 'LONG_SE', 'QUAD_NAME', 'STATE_CODE', 'QUAD_SCALE', 'geometry']
-  nv_100kquads.shp: 68 ['Polygon'] cols=['AREA', 'PERIMETER', 'NV_100KQUA', 'NV_100KQUA', 'USGS_QD_ID', 'QUAD_NAME', 'MAP_EDIT', 'ST_FIPS1', 'ST_NAME1', 'ST_FIPS2', 'ST_NAME2', 'ST_FIPS3', 'ST_NAME3', 'ST_FIPS4', 'ST_NAME4', 'DATE_PUB', 'geometry']
-  mrds-fUS32.shp: 15279 ['Point'] cols=['DEP_ID', 'MRDS_ID', 'MAS_ID', 'SITE_NAME', 'LATITUDE', 'LONGITUDE', 'REGION', 'COUNTRY', 'STATE', 'COUNTY', 'DISTRICT', 'ADMIN', 'LAND_STAT', 'COM_TYPE', 'COM_MAJOR', 'COM_MINOR', 'COM_TRACE', 'OPER_TYPE', 'DEP_TYPE', 'PROD_SIZE']
-  nevadarivers.shp: 805 ['LineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'NEV_RIV_', 'NEV_RIV_ID', 'TYPE', 'RIVER_TYPE', 'STATE_FIPS', 'STATE_NAME', 'SUB_REGION', 'geometry']
-  ROADS_A.shp: 607 ['LineString'] cols=['FNODE_', 'TNODE_', 'LPOLY_', 'RPOLY_', 'LENGTH', 'NV_RDS98_', 'NV_RDS98_I', 'NAME', 'TYPE', 'geometry']
-geology layer: plss100k.shp 111295 EPSG:26911
-Traceback (most recent call last):
-  File "/home/runner/work/project-paleowave/project-paleowave/tools/v4/geology.py", line 52, in <module>
-    lab = next(c for c in geo.columns if c.upper() in ("ORIG_LABEL", "UNIT", "UNITSYMBOL", "LABEL", "MAP_UNIT", "PTYPE", "UNIT_LABEL", "SYMBOL"))
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-StopIteration
+NevadaGeology: 38696 EPSG:26711 ['AREA', 'PERIMETER', 'FMATN', 'L_NAME', 'GEOLOGICFM', 'STATEMAP', 'County', 'BioAgeMax', 'BioAgeMin', 'ModPoly', 'Notes', 'Refs', 'Reviewed', 'Shape_Leng', 'Shape_Area', 'geometry']
+FMATN {'Qal': 1150, 'Tr': 859, 'QTb': 803, 'Qa': 780, 'Tov': 541, 'Tys': 538, 'Tts': 536, 'Op': 481, 'Qoa': 477, 'Ts3': 473, 'Tb': 467, 'Dg': 466, 'Oe': 444, 'Tba': 443, 'PIP': 423}
+L_NAME {'Alluvium': 1027, 'Older alluvium': 954, 'Basalt': 731, 'Sedimentary rocks': 656, 'Older volcanic rocks': 633, 'Rhyolite': 540, 'Sedimentary and volcanic rocks': 472, 'Younger volcanic rocks, undivided': 427, 'Riepe Spring Limest of Steele (1960), Ely Limest': 423, 'Phenorhyolitic to phenodacitic ignimbrite': 401, 'Younger sedimentary and volcanic rocks': 400, 'Rhyolitic and dacitic volcanic rocks': 379, 'Volcanic rocks, undifferentiated': 373, 'Chainman Shale, Joana Limestone, Pilot Shale': 357, 'Pogonip Group': 331}
+GEOLOGICFM {'Tt2': 4165, 'Ts3': 2574, 'Tt3': 1607, 'Tba': 1576, 'Tr3': 1314, 'Qal': 1202, 'Dc': 1052, 'Ta2': 1010, 'Ta3': 973, 'Cc': 876, 'CZq': 864, 'QToa': 854, 'MDcl': 849, 'Qya': 798, 'Dcd': 774}
+STATEMAP {'Dc': 1759, 'MDs': 1513, 'Oc': 1414, 'Cc': 873, 'PlPc': 665, 'CZs': 639, 'Tt3': 538, 'Psc': 535, 'Pc': 492, 'Tt2': 436, 'JTRs': 434, 'Ts3': 431, 'Sc': 405, 'QToa': 365, 'Ta2': 356}
+Triassic-bearing units (km2):
+FMATN   GEOLOGICFM  L_NAME                                            
+JTRa    JO          Auld Lang Syne Group; slate, phyll., hornf., qtzit    1092.788303
+JTRux1  JO          Phyllite, slate, and fine-grained quartzite            378.598277
+TRcm    TRmt        Chinle and Moenkopi Formations, undivided              277.986956
+JTRv    WPN         Metavolcanic rocks                                     224.280569
+TRs     TRmt        Marine sedimentary rocks                               224.022012
+        JO          Raspberry fmatn: Santa Rosa: formations of Compton     220.826459
+JTRs    WPN         Metasedimentary rocks                                  173.180163
+TRex1   WPN         Excelsior form.; felsic volcanics, clastics, tuffs     167.053617
+TRe     WPL         Excelsior form.; felsic volcanics, clastics, tuffs     162.545214
+        GC          Excelsior form.; felsic volcanics, clastics, tuffs     161.875459
+TRro    TRkv        Rochester Rhyolite; rhyolite welded tuff               158.804439
+TRl     WLB         Luning form.; limestone, dolomite, shale               155.815490
+TRk     TRkv        Koipato Group; volcanic, sedimentary rocks             150.527338
+TRl     WPL         Luning form.; limestone, dolomite, shale               144.163035
+TRs     JO          undivided shale, sand, and siltstone                   129.465869
+TRnp    TRc         Natchez Pass Form.; limest., dolomite mafic            129.179606
+TRw     JO          Winnemucca formation                                    99.494043
+JTRu    BRJ         Phyllite, slate, and fine-grained quartzite             82.742168
+TRe     SAS         Excelsior form.; felsic volcanics, clastics, tuffs      80.169627
+TRqm    JO          Quartzite and mudstone                                  79.887914
+TRm     TRmt        Moenkopi Formation                                      77.094637
+TRlg    TRfi        Leucogranite                                            76.211413
+TRcm    JTRch       Chinle and Moenkopi Formations, undivided               70.924647
+TRp     TRc         Prida Frm; lmest, dolom, chert, shale, sltst            69.322642
+TRr     JO          Raspberry formation in the Santa Rosa Range             68.304080
+TRca    TRc         Cane Sp., Augusta Mtn. Frm.; limest., dolom., shal      66.362863
+TRPu    BRJ         Volcanic and sedimentary rocks, undivided               64.760716
+TRa     TRc         Augusta Mountain Formation                              63.332048
+TRgv    JTRs        Grass Valley Frm; mudst, sandst, argill, qtzite         59.833033
+JTRvx   JTRv        Metavolcanic rocks                                      57.630783
+TRsi    JO          intermediate subunit                                    56.269145
+TRl     WPL         Luning Formation; limestone, dolomite                   54.103787
+TRdg    JTRs        Dun Glen Frm; limestone, dolomite, sandst, argill       50.287677
+TRs     JO          Auld Lang Syne Group; shale, siltstone                  50.285389
+TRa     JO          Raspberry fmatn in the Santa Rosa Range: Andorno        48.773634
+TRpu    TRc         Prida Form.; limest., dolomite, chert                   46.228468
+TRs     GC          Marine sedimentary rocks                                44.933003
+JTRvl   SAS         Volcaniclastic rocks and limestone                      41.459933
+TRcs    TRc         Cane Spring Formation                                   40.088536
+TRra    JO          Raspberry Frm.; mudst., sandst., limest.                37.538810
+TRsl    JO          lower subunit                                           36.460852
+TRpml   TRc         Prida Form.; shale, siltst., limest., sandst., dol      36.294282
+TRwi    JTRs        Winnemucca Frm; Sandst, calstics, limest, dolomite      35.077458
+JTRsg   WPL         Sunrise, Gabbs Formations; limestone, siltstone         33.700916
+JTRsl   WPL         Sunrise, Gabbs, Luning Formations; undivided            33.239935
+TRPux1  JO          Volcanic and sedimentary rocks, undivided               30.090175
+TRwe    TRkv        Weaver Rhyolite; tuff, sandst., siltst., conglom.       28.852041
+TRgv    JO          Grass Valley formation                                  28.323707
+TRgvo   JTRs        Grass Valley, Osobb Frm; argillite, sandstone           28.288691
+TRPs    TRmt        Sedimentary and volcanic rocks                          27.690796
+TRgvx1  JO          Grass Valley Frm; mudst, sandst, argill, qtzite         27.497824
+TRl     WLB         Luning Formation; limestone, dolomite                   26.056749
+TRm     JO          Raspberry fmatn in the Santa Rosa Range: Mullinix       23.664028
+JTRmvy  Jgb         Metavolcanic rocks                                      23.419022
+TRs     TRmt        Lower Triassic sedimentary rocks                        22.926392
+TRo     JTRs        Osobb Formation                                         22.865524
+TRgv    JO          Grass Valley Frm; mudst, sandst, argill, qtzite         21.804649
+JTRmvx  JTRv        Metavolcanic rocks                                      21.347995
+TRl     TRkv        Limerick Greenstone                                     21.185651
+TRe     GC          Excelsior Formation                                     20.552747
+TRc     JTRch       Chinle Formation                                        19.218172
+TRe     QM          Excelsior Formation; qtzite, siltite, chert, lmst       18.838826
+TRl     TRkv        Limerick Greenstone; andes., brecc., tuffs              17.873441
+TRJ     WPL         Gabbs and Sunrise form.; shale, limestone               17.729704
+TRsu    JO          upper subunit                                           17.728378
+TRe     JTRgor      Excelsior form.; felsic volcanics, clastics, tuffs      16.859916
+TRc     TRcl        Candelaria Formation; shale, sandstone                  16.458766
+TRPux1  BRJ         Volcanic and sedimentary rocks, undivided               16.267486
+JTRv    Ta3         Metavolcanic rocks                                      15.845739
+TRt     TRc         Tobin Frm.; sandst., mudst., limest., greenst.          15.039873
+JTRa    SAS         Auld Lang Syne Group; slate, phyll., hornf., qtzit      14.561566
+TRrp    TRfi        Rhyolite porphyry                                       14.535296
+TRe     JTRgor      Excelsior Formation; qtzite, siltite, chert, lmst       12.816179
+TRex1   Kfi         Excelsior form.; felsic volcanics, clastics, tuffs      12.226751
+TRld    JO          Limestone and dolomite                                  11.958396
+TRls    TRc         Limestone, conglomerate, and shale in Toiyabe Rang      11.818596
+TRc     TRc         Conglomerate                                            11.470097
+JTRlx1  BRJ         Limestone                                               11.260986
+JTRvl   QM          Volcaniclastic rocks and limestone                      11.166430
+TRex1   WPL         Excelsior form.; felsic volcanics, clastics, tuffs      10.915558
+        occ formation        lat          lng     prec    on_unit nearest_TR     km
+0    467069     Prida  40.133331  -118.300003  minutes    Qal:Qal       JTRa   2.79
+1    467070     Prida  40.133331  -118.300003  minutes    Qal:Qal       JTRa   2.79
+2    467071     Prida  40.133331  -118.300003  minutes    Qal:Qal       JTRa   2.79
+3    467073     Prida  40.133331  -118.300003  minutes    Qal:Qal       JTRa   2.79
+4    467074     Prida  40.133331  -118.300003  minutes    Qal:Qal       JTRa   2.79
+5    714514     Gabbs  38.487000  -118.083000        3    TRJ:WPL        TRJ   0.00
+6    900174    Luning  38.431946  -118.045830  seconds    Qal:Ts3        TRl   2.85
+7    900219    Luning  38.431946  -118.045830  seconds    Qal:Ts3        TRl   2.85
+8    900302    Luning  38.402000  -118.016998        3    TRl:WLB        TRl   0.00
+9    906286       NaN  40.000000  -116.716667  minutes      Dl:Dc       TRls  10.46
+10   906287       NaN  40.000000  -116.716667  minutes      Dl:Dc       TRls  10.46
+11   906313       NaN  40.548058  -118.099998  seconds   Qal:QToa        TRl   0.37
+12   906314       NaN  40.548058  -118.099998  seconds   Qal:QToa        TRl   0.37
+13   908629    Luning  38.876667  -117.591393  seconds    TRl:WLB        TRl   0.00
+14   908660    Favret  40.059166  -117.558891  seconds    Qal:Qal        TRf   0.17
+15   908661    Favret  40.224998  -117.633888  seconds   TRk:TRkv        TRk   0.00
+16   909076    Favret  40.048611  -117.538330  seconds    TRf:TRc        TRf   0.00
+17   934002       NaN  40.405666  -118.136673        6  TRro:TRkv       TRro   0.00
+18  1095497    Favret  40.049999  -117.540001        2    TRf:TRc        TRf   0.00
+19  1186493       NaN  39.578609  -117.532784        5    Tru:Tt2        TRa   4.15
+20  1412645     Prida  40.277779  -118.075836  seconds   TRnp:TRc       TRnp   0.00
+21  1412647     Prida  40.277779  -118.075836  seconds   TRnp:TRc       TRnp   0.00
+22  1417529    Favret  40.001389  -117.539444  seconds   TRcs:TRc       TRcs   0.00
+23  1419160    Favret  40.033333  -117.566666  minutes   TRca:TRc       TRca   0.00
+24  1419479    Luning  38.876667  -117.591393  seconds    TRl:WLB        TRl   0.00
+25  1419480    Luning  38.876667  -117.591393  seconds    TRl:WLB        TRl   0.00
+26  1504406    Favret  40.059166  -117.558891  seconds    Qal:Qal        TRf   0.17
+27  1583679       NaN  41.272499  -114.306946  seconds     Pgp:Pc        TRs   1.31
