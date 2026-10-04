@@ -1,0 +1,701 @@
+{
+ "model": "forest",
+ "evals": {
+  "logistic": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.575,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.945,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.986,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.594,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.996,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.883,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.773,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.193,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.809,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.809,
+   "top10": 3,
+   "top25": 6,
+   "n": 9
+  },
+  "forest": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.952,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.995,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.931,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.928,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.938,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.966,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.954,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.0,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.728,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.938,
+   "top10": 7,
+   "top25": 7,
+   "n": 9
+  },
+  "exposure": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.417,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.602,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.627,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.607,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.647,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.488,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.515,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.543,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.609,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.602,
+   "top10": 0,
+   "top25": 0,
+   "n": 9
+  },
+  "forest_no_distance": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.937,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.988,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.913,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.916,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.92,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.972,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.934,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.0,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.763,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.92,
+   "top10": 7,
+   "top25": 8,
+   "n": 9
+  },
+  "forest_terrain": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.807,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.959,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.503,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.507,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.471,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.726,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.529,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.431,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.566,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.529,
+   "top10": 1,
+   "top25": 2,
+   "n": 9
+  },
+  "forest_satellite": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.869,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.902,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.881,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.86,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.86,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.917,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.908,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.0,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.0,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.869,
+   "top10": 3,
+   "top25": 7,
+   "n": 9
+  },
+  "distance_only": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.612,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.612,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.612,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.0,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 1.0,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.0,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.612,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.0,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.612,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.612,
+   "top10": 1,
+   "top25": 1,
+   "n": 9
+  },
+  "forest_importance": {
+   "slope": 0.195,
+   "relief": 0.151,
+   "tpi300": 0.016,
+   "tpi1000": 0.023,
+   "north": 0.008,
+   "ndvi": 0.07,
+   "bsi": 0.175,
+   "carb": 0.302,
+   "iron": 0.018,
+   "dist_unit": 0.042
+  }
+ },
+ "geology": {
+  "places": 16,
+  "in_area": 9,
+  "precise_in_area": 8,
+  "area_km2": 8530,
+  "tierA_km2": 1000,
+  "tierB_km2": 2541,
+  "cells": 9477518
+ },
+ "features": [
+  "slope",
+  "relief",
+  "tpi300",
+  "tpi1000",
+  "north",
+  "ndvi",
+  "bsi",
+  "carb",
+  "iron",
+  "dist_unit"
+ ],
+ "places": [
+  {
+   "place": 1,
+   "n": 3,
+   "precise": true,
+   "formation": "Luning",
+   "occ": "908629,1419479,1419480",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 2,
+   "n": 2,
+   "precise": true,
+   "formation": "Luning",
+   "occ": "900174,900219",
+   "in_area": false,
+   "km_to_units": 2.85,
+   "has_feats": true
+  },
+  {
+   "place": 3,
+   "n": 1,
+   "precise": true,
+   "formation": "Luning",
+   "occ": "900302",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 4,
+   "n": 1,
+   "precise": true,
+   "formation": "Gabbs",
+   "occ": "714514",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 5,
+   "n": 2,
+   "precise": false,
+   "formation": "",
+   "occ": "906286,906287",
+   "in_area": false,
+   "km_to_units": 38.92,
+   "has_feats": false
+  },
+  {
+   "place": 6,
+   "n": 2,
+   "precise": true,
+   "formation": "Favret",
+   "occ": "908660,1504406",
+   "in_area": true,
+   "km_to_units": 0.18,
+   "has_feats": true
+  },
+  {
+   "place": 7,
+   "n": 2,
+   "precise": true,
+   "formation": "Favret",
+   "occ": "909076,1095497",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 8,
+   "n": 1,
+   "precise": false,
+   "formation": "Favret",
+   "occ": "1419160",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 9,
+   "n": 1,
+   "precise": true,
+   "formation": "Favret",
+   "occ": "1417529",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 10,
+   "n": 1,
+   "precise": true,
+   "formation": "Favret",
+   "occ": "908661",
+   "in_area": true,
+   "km_to_units": 0.66,
+   "has_feats": true
+  },
+  {
+   "place": 11,
+   "n": 5,
+   "precise": false,
+   "formation": "Prida",
+   "occ": "467069,467070,467071,467073,467074",
+   "in_area": false,
+   "km_to_units": 2.78,
+   "has_feats": true
+  },
+  {
+   "place": 12,
+   "n": 2,
+   "precise": true,
+   "formation": "",
+   "occ": "906313,906314",
+   "in_area": false,
+   "km_to_units": 2.31,
+   "has_feats": true
+  },
+  {
+   "place": 13,
+   "n": 2,
+   "precise": true,
+   "formation": "Prida",
+   "occ": "1412645,1412647",
+   "in_area": true,
+   "km_to_units": 0.0,
+   "has_feats": true
+  },
+  {
+   "place": 14,
+   "n": 1,
+   "precise": true,
+   "formation": "",
+   "occ": "934002",
+   "in_area": false,
+   "km_to_units": 1.03,
+   "has_feats": true
+  },
+  {
+   "place": 15,
+   "n": 1,
+   "precise": true,
+   "formation": "",
+   "occ": "1186493",
+   "in_area": false,
+   "km_to_units": 4.14,
+   "has_feats": true
+  },
+  {
+   "place": 16,
+   "n": 1,
+   "precise": true,
+   "formation": "",
+   "occ": "1583679",
+   "in_area": false,
+   "km_to_units": 1.31,
+   "has_feats": true
+  }
+ ],
+ "targets": 40,
+ "tiles": 274,
+ "tiles_missing": 0,
+ "seconds": 896
+}

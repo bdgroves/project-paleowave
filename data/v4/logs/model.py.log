@@ -1,6 +1,6 @@
-[    12s] units: {'A': 1000, 'B': 2541} km²
-[    13s] known places: 16 (13 precise); in search area: 9
-[    13s]     place  n  precise formation  in_area  km_to_units
+[    14s] units: {'A': 1000, 'B': 2541} km²
+[    14s] known places: 16 (13 precise); in search area: 9
+[    14s]     place  n  precise formation  in_area  km_to_units
 0       1  3     True    Luning     True         0.00
 1       2  2     True    Luning    False         2.85
 2       3  1     True    Luning     True         0.00
@@ -17,15 +17,29 @@
 13     14  1     True              False         1.03
 14     15  1     True              False         4.14
 15     16  1     True              False         1.31
-[    13s] tiles: 274
-[    22s]   retry 0 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
-[    35s]   retry 1 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
-[    57s]   retry 2 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
-[   109s] Berlin-Ichthyosaur State Park: 0.3 km²
-[   110s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=29
-[   111s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=29
-[   115s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=29
-[   116s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=29
+[    14s] tiles: 274
+[    25s]   retry 0 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
+[    64s] Berlin-Ichthyosaur State Park: 0.3 km²
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[    82s] prefetched 1/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   113s] prefetched 26/274
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
@@ -44,130 +58,333 @@
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
-[   140s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=33
-[   144s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=33
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
-[   145s] prefetched 1/274
-[   145s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=33
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   158s] prefetched 51/274
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
-[   149s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=33
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
   m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
 /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/rasterio/features.py:381: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
   _rasterize(
-[   177s] prefetched 26/274
-[   208s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=37
-[   213s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=37
-[   220s] prefetched 51/274
-[   252s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
-[   257s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
-[   264s] prefetched 76/274
-[   296s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
-[   301s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
-[   307s] prefetched 101/274
-[   352s] prefetched 126/274
-[   404s] prefetched 151/274
-[   408s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
-[   408s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
-[   413s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
-[   413s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
-[   432s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=44
-[   437s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=44
-[   447s]   retry 2 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=44
-[   479s] prefetched 176/274
-[   503s] prefetched 201/274
-[   504s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=59
-[   509s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=59
-[   511s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=62
-[   516s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=62
-[   539s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
-[   544s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
-[   545s] prefetched 226/274
-[   556s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=65
-[   561s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=65
-[   565s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=67
-[   570s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=67
-[   584s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=69
-[   589s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=69
-[   605s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=71
-[   610s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=71
-[   613s] prefetched 251/274
-[   641s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   641s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   646s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   646s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   648s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   653s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   653s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   660s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   670s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   670s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   670s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   674s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   677s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   687s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   692s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   692s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   693s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   699s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   710s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   715s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
-[   735s] tile 1/274: cells in area 64596
-[   736s] tile 11/274: cells in area 76437
-[   736s] tile 21/274: cells in area 6547
-[   737s] tile 31/274: cells in area 19556
-[   738s] tile 41/274: cells in area 15542
-[   738s] tile 51/274: cells in area 12866
-[   739s] tile 61/274: cells in area 8082
-[   740s] tile 71/274: cells in area 81524
-[   740s] tile 81/274: cells in area 601
-[   741s] tile 91/274: cells in area 58243
-[   742s] tile 101/274: cells in area 7485
-[   742s] tile 111/274: cells in area 3710
-[   743s] tile 121/274: cells in area 21505
-[   744s] tile 131/274: cells in area 12377
-[   744s] tile 141/274: cells in area 30131
-[   745s] tile 151/274: cells in area 79185
-[   746s] tile 161/274: cells in area 17646
-[   746s] tile 171/274: cells in area 12545
-[   747s] tile 181/274: cells in area 3624
-[   748s] tile 191/274: cells in area 36323
-[   748s] tile 201/274: cells in area 1588
-[   749s] tile 211/274: cells in area 30373
-[   749s] tile 221/274: cells in area 43910
-[   750s] tile 231/274: cells in area 14827
-[   751s] tile 241/274: cells in area 61134
-[   751s] tile 251/274: cells in area 64824
-[   752s] tile 261/274: cells in area 8229
-[   753s] tile 271/274: cells in area 12646
-[   753s] tiles with data: 274, missing: 0; background sample: 94870
-[   753s] places with features: 15
-[   754s] training places: 8
-[   759s] logistic: held-out places' median percentile 0.81; top 10%: 3/9; top 25%: 6/9
-[   800s] forest: held-out places' median percentile 0.94; top 10%: 7/9; top 25%: 7/9
-[   800s] exposure: held-out places' median percentile 0.60; top 10%: 0/9; top 25%: 0/9
-[   800s] best: forest
-Traceback (most recent call last):
-  File "/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py", line 430, in <module>
-    sc = exposure(D).to_numpy() if best == "exposure" else final.predict_proba(D.to_numpy())[:, 1]
-                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
-    X = self._validate_X_predict(X)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 615, in _validate_X_predict
-    X = validate_data(
-        ^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/sklearn/utils/validation.py", line 3041, in validate_data
-    out = check_array(X, input_name="X", **check_params)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1113, in check_array
-    raise ValueError(
-ValueError: Found array with 0 sample(s) (shape=(0, 10)) while a minimum of 1 is required by RandomForestClassifier.
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   197s] prefetched 76/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   240s] prefetched 101/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   286s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   290s] prefetched 126/274
+[   291s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   313s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   318s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   348s] prefetched 151/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   389s] prefetched 176/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   429s] prefetched 201/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   468s] prefetched 226/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+[   515s] prefetched 251/274
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:207: RuntimeWarning: All-NaN slice encountered
+  m = {k: np.nanmedian(np.stack(v), axis=0) for k, v in stack.items()}
+/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/rasterio/features.py:381: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+  _rasterize(
+[   559s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   559s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   562s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   562s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   569s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   571s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   574s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   588s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   588s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   595s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   603s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   605s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   605s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   605s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   613s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   627s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   627s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   627s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   628s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   635s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   655s] tile 1/274: cells in area 64596
+[   656s] tile 11/274: cells in area 76437
+[   656s] tile 21/274: cells in area 6547
+[   657s] tile 31/274: cells in area 19556
+[   658s] tile 41/274: cells in area 15542
+[   658s] tile 51/274: cells in area 12866
+[   659s] tile 61/274: cells in area 8082
+[   660s] tile 71/274: cells in area 81524
+[   661s] tile 81/274: cells in area 601
+[   661s] tile 91/274: cells in area 58243
+[   662s] tile 101/274: cells in area 7485
+[   663s] tile 111/274: cells in area 3710
+[   663s] tile 121/274: cells in area 21505
+[   664s] tile 131/274: cells in area 12377
+[   665s] tile 141/274: cells in area 30131
+[   665s] tile 151/274: cells in area 79185
+[   666s] tile 161/274: cells in area 17646
+[   667s] tile 171/274: cells in area 12545
+[   667s] tile 181/274: cells in area 3624
+[   668s] tile 191/274: cells in area 36323
+[   669s] tile 201/274: cells in area 1588
+[   669s] tile 211/274: cells in area 30373
+[   670s] tile 221/274: cells in area 43910
+[   671s] tile 231/274: cells in area 14827
+[   671s] tile 241/274: cells in area 61134
+[   672s] tile 251/274: cells in area 64824
+[   672s] tile 261/274: cells in area 8229
+[   673s] tile 271/274: cells in area 12646
+[   673s] tiles with data: 274, missing: 0; background sample: 94870
+[   674s] places with features: 15
+[   675s] training places: 8
+[   679s] logistic: held-out places' median percentile 0.81; top 10%: 3/9; top 25%: 6/9
+[   720s] forest: held-out places' median percentile 0.94; top 10%: 7/9; top 25%: 7/9
+[   720s] exposure: held-out places' median percentile 0.60; top 10%: 0/9; top 25%: 0/9
+[   763s] forest_no_distance: held-out places' median percentile 0.92; top 10%: 7/9; top 25%: 8/9
+[   801s] forest_terrain: held-out places' median percentile 0.53; top 10%: 1/9; top 25%: 2/9
+[   835s] forest_satellite: held-out places' median percentile 0.87; top 10%: 3/9; top 25%: 7/9
+[   859s] distance_only: held-out places' median percentile 0.61; top 10%: 1/9; top 25%: 1/9
+[   859s] model: forest on all features (ablations above for comparison)
+[   896s] cells in the top 2%: 195058
+[   896s] done; targets: 40
