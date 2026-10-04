@@ -6,7 +6,7 @@ PaleoWave v4: the rock, the exposure, and the land.
 1. Rock. Units from the Geologic Map of Nevada (Crafford 2007, 1:250,000, formation-level names):
    tier A = the formations Nevada's ichthyosaurs come from (Prida, Favret, Augusta Mountain, Cane
    Spring, Natchez Pass, Luning, Gabbs, Sunrise, Lower Triassic marine rocks); tier B = other marine
-   Triassic sedimentary units. The search area is both, plus 300 m for map error.
+   Triassic sedimentary units. The search area is both, plus 1 km for map and coordinate error.
 2. Exposure, on a 30 m grid (UTM 11N): from USGS 3DEP, slope, relief and topographic position; from
    Sentinel-2 summer scenes (2023-2025, clouds masked, median), greenness, bare-ground index, a
    carbonate index (limestone absorbs at 2.3 µm, so B11/B12 rises) and an iron index.
@@ -51,7 +51,7 @@ PAD = 1050                    # m of extra DEM around each tile, for the 1 km to
 TIER_A = (r"Prida|Favret|Augusta|Cane Sp|Natchez|Star Peak|Luning|Gabbs|Sunrise|Thaynes|Lower Triassic sedimentary")
 TIER_B = (r"Dun Glen|Winnemucca|Grass Valley|Raspberry|Tobin|Dixie Valley|Auld Lang Syne|Marine sedimentary rocks|"
           r"Candelaria|Osobb|Limestone and dolomite|shale, sand, and siltstone|upper subunit|lower subunit|intermediate subunit")
-FEATS = ["slope", "relief", "tpi300", "tpi1000", "north", "ndvi", "bsi", "carb", "iron"]
+FEATS = ["slope", "relief", "tpi300", "tpi1000", "north", "ndvi", "bsi", "carb", "iron", "dist_unit"]
 T0 = time.time()
 
 
@@ -88,7 +88,8 @@ units["tier"] = np.where(isA[isA | isB], "A", "B")
 units = units[["FMATN", "L_NAME", "GEOLOGICFM", "tier", "geometry"]]
 log("units:", units.groupby("tier").apply(lambda d: round(d.area.sum() / 1e6)).to_dict(), "km²")
 units.to_crs(4326).assign(geometry=lambda d: d.geometry.simplify(0.0002)).to_file(OUT / "units.geojson", driver="GeoJSON")
-area = units.buffer(300).union_all()
+BUF = 1000                    # m around mapped units: the 1:250,000 map and old coordinates both carry error
+area = units.buffer(BUF).union_all()
 uA = units[units.tier == "A"].union_all()
 
 # Known places
@@ -188,7 +189,7 @@ def s2_tile(tx, ty):
         try:
             for k, h in hrefs.items():
                 with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN="EMPTY_DIR", GDAL_HTTP_MAX_RETRY="4", GDAL_HTTP_RETRY_DELAY="2"):
-                    with rasterio.open(h) as s, WarpedVRT(s, crs=CRS, transform=tf, width=n, height=n,
+                    with rasterio.open(h, **({"overview_level": 0} if k in ("B02", "B04", "B08") else {})) as s, WarpedVRT(s, crs=CRS, transform=tf, width=n, height=n,
                                                            resampling=Resampling.nearest if k == "SCL" else Resampling.average) as v:
                         arrs[k] = v.read(1).astype("float32")
         except Exception as e:  # noqa: BLE001
@@ -242,7 +243,9 @@ if b:
         rings = [e["geometry"]] if e["type"] == "way" else [m["geometry"] for m in e.get("members", []) if m.get("role") == "outer" and m.get("geometry")]
         for r in rings:
             if r and len(r) > 3:
-                polys.append(Polygon([(p["lon"], p["lat"]) for p in r]))
+                pg = Polygon([(p["lon"], p["lat"]) for p in r]).buffer(0)
+                if pg.is_valid and not pg.is_empty:
+                    polys.append(pg)
     if polys:
         bisp = gpd.GeoSeries([unary_union(polys)], crs=4326).to_crs(CRS).iloc[0].buffer(0)
         log(f"Berlin-Ichthyosaur State Park: {bisp.area / 1e6:.1f} km²")
@@ -251,6 +254,24 @@ if bisp is None:
     bisp = gpd.GeoSeries(gpd.points_from_xy([-117.5914], [38.8767]), crs=4326).to_crs(CRS).iloc[0].buffer(3000)
 
 # ── 3. features, tile by tile ────────────────────────────────────────────
+uA300 = uA.buffer(300)
+uAll = units.union_all()
+from concurrent.futures import ThreadPoolExecutor   # noqa: E402
+
+
+def prefetch(t):
+    try:
+        dem_tile(*t)
+        s2_tile(*t)
+        land_tile(*t)
+    except Exception as e:  # noqa: BLE001
+        log("  prefetch failed", t, str(e)[:120])
+
+
+with ThreadPoolExecutor(8) as ex:
+    for i, _ in enumerate(ex.map(prefetch, tiles)):
+        if i % 25 == 0:
+            log(f"prefetched {i + 1}/{len(tiles)}")
 rng = np.random.default_rng(42)
 samples, tile_store, missing = [], {}, 0
 for k, (tx, ty) in enumerate(tiles):
@@ -268,9 +289,10 @@ for k, (tx, ty) in enumerate(tiles):
     n = TILE // RES
     tf = from_origin(tx, ty + TILE, RES, RES)
     inside = rasterize([(mapping(area.intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool)
-    tierA = rasterize([(mapping(uA.buffer(300).intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool) if uA.buffer(300).intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), bool)
+    tierA = rasterize([(mapping(uA300.intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool) if uA300.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), bool)
+    onunit = rasterize([(mapping(uAll.intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8") if uAll.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), "uint8")
     park = rasterize([(mapping(bisp), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool) if bisp.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), bool)
-    F = {**t, **s2}
+    F = {**t, **s2, "dist_unit": (ndimage.distance_transform_edt(onunit == 0) * RES).astype("float32")}
     # smooth to ~90 m so a point's features don't hinge on one cell (records are good to ~30-100 m at best)
     F = {f: ndimage.uniform_filter(np.nan_to_num(v, nan=np.nanmedian(v) if np.isfinite(v).any() else 0), 3).astype("float32") for f, v in F.items()}
     ok = inside & np.isfinite(F["ndvi"])
