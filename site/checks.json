@@ -6,12 +6,12 @@
   "records": 27,
   "places": 16,
   "background": 982,
-  "recall_by_record": 0.889,
-  "recall_by_place_records": 0.259,
-  "places_found": 7,
-  "background_flagged": 0.02,
-  "auc_by_record": 0.982,
-  "auc_by_place": 0.874
+  "recall_by_record": 0.926,
+  "recall_by_place_records": 0.519,
+  "places_found": 9,
+  "background_flagged": 0.03,
+  "auc_by_record": 0.985,
+  "auc_by_place": 0.857
  },
  "tri": {
   "fossil_ratio": 7.72,
