@@ -1,0 +1,36 @@
+name: PaleoWave v4 build
+
+on:
+  workflow_dispatch:
+    inputs:
+      step:
+        description: script under tools/v4 to run
+        default: geology.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paleowave
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q geopandas pandas numpy scipy "scikit-learn==1.9.1" rasterio pillow pyproj shapely
+      - name: Run tools/v4/${{ inputs.step }}
+        run: python tools/v4/${{ inputs.step }} 2>&1 | tee /tmp/v4.log
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p data/v4/logs && cp /tmp/v4.log "data/v4/logs/${{ inputs.step }}.log"
+          git add data/v4
+          git diff --staged --quiet && exit 0
+          git commit -q -m "v4: ${{ inputs.step }}"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
