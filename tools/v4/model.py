@@ -290,9 +290,12 @@ for k, (tx, ty) in enumerate(tiles):
     tf = from_origin(tx, ty + TILE, RES, RES)
     inside = rasterize([(mapping(area.intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool)
     tierA = rasterize([(mapping(uA300.intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool) if uA300.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), bool)
-    onunit = rasterize([(mapping(uAll.intersection(box(tx, ty, tx + TILE, ty + TILE))), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8") if uAll.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), "uint8")
+    # distance to the nearest mapped unit, measured on a padded window so tile edges don't cut it short
+    pb = box(tx - PAD, ty - PAD, tx + TILE + PAD, ty + TILE + PAD)
+    npd = n + 2 * (PAD // RES)
+    onunit = rasterize([(mapping(uAll.intersection(pb)), 1)], out_shape=(npd, npd), transform=from_origin(tx - PAD, ty + TILE + PAD, RES, RES), fill=0, dtype="uint8") if uAll.intersects(pb) else np.zeros((npd, npd), "uint8")
     park = rasterize([(mapping(bisp), 1)], out_shape=(n, n), transform=tf, fill=0, dtype="uint8").astype(bool) if bisp.intersects(box(tx, ty, tx + TILE, ty + TILE)) else np.zeros((n, n), bool)
-    F = {**t, **s2, "dist_unit": (ndimage.distance_transform_edt(onunit == 0) * RES).astype("float32")}
+    F = {**t, **s2, "dist_unit": (ndimage.distance_transform_edt(onunit == 0) * RES).astype("float32")[PAD // RES:-(PAD // RES), PAD // RES:-(PAD // RES)]}
     # smooth to ~90 m so a point's features don't hinge on one cell (records are good to ~30-100 m at best)
     F = {f: ndimage.uniform_filter(np.nan_to_num(v, nan=np.nanmedian(v) if np.isfinite(v).any() else 0), 3).astype("float32") for f, v in F.items()}
     ok = inside & np.isfinite(F["ndvi"])
