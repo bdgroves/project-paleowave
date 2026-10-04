@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - run: pip install -q geopandas pandas numpy scipy "scikit-learn==1.9.1" rasterio pillow pyproj shapely
+      - run: pip install -q geopandas pandas numpy scipy "scikit-learn==1.9.1" rasterio pillow pyproj shapely matplotlib
       - uses: actions/cache@v4
         with:
           path: /tmp/v4cache
@@ -36,7 +36,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p data/v4/logs && cp /tmp/v4.log "data/v4/logs/${{ inputs.step }}.log"; cp /tmp/v4.log data/v4/logs/last.log
-          git add data/v4
+          git add data/v4 site/v4 2>/dev/null || git add data/v4
           git diff --staged --quiet && exit 0
           git commit -q -m "v4: ${{ inputs.step }}"
           for i in 1 2 3; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done
