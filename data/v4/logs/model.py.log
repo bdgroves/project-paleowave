@@ -1,6 +1,6 @@
-[    14s] units: {'A': 1000, 'B': 2541} km²
-[    14s] known places: 16 (13 precise); in search area: 8
-[    14s]     place  n  precise formation  in_area  km_to_units
+[    13s] units: {'A': 1000, 'B': 2541} km²
+[    13s] known places: 16 (13 precise); in search area: 9
+[    13s]     place  n  precise formation  in_area  km_to_units
 0       1  3     True    Luning     True         0.00
 1       2  2     True    Luning    False         2.85
 2       3  1     True    Luning     True         0.00
@@ -10,28 +10,415 @@
 6       7  2     True    Favret     True         0.00
 7       8  1    False    Favret     True         0.00
 8       9  1     True    Favret     True         0.00
-9      10  1     True    Favret    False         0.66
+9      10  1     True    Favret     True         0.66
 10     11  5    False     Prida    False         2.78
 11     12  2     True              False         2.31
 12     13  2     True     Prida     True         0.00
 13     14  1     True              False         1.03
 14     15  1     True              False         4.14
 15     16  1     True              False         1.31
-[    14s] tiles: 256
+[    13s] tiles: 274
+[    22s]   retry 0 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
+[    53s] Berlin-Ichthyosaur State Park: 0.3 km²
+[    68s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=32
+[    68s] prefetched 1/274
+[    73s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=32
+[    81s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=33
+[    86s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=33
+[    89s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=34
+[    94s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=34
+[   117s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=35
+[   120s] prefetched 26/274
+[   122s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=35
+[   143s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=37
+[   148s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=37
+[   150s] prefetched 51/274
+[   161s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=37
+[   161s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   163s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   166s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=37
+[   166s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   168s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   184s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   186s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   189s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   191s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   191s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   196s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   199s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   204s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=38
+[   221s] prefetched 76/274
+[   240s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=39
+[   245s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=39
+[   263s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
+[   268s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
+[   277s] prefetched 101/274
+[   288s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
+[   293s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
+[   304s]   retry 2 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=40
+[   314s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   320s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   331s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   336s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   337s] prefetched 126/274
+[   344s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   347s]   retry 2 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   349s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   359s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   360s]   retry 2 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   364s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   370s]   retry 0 HTTP Error 504: Gateway Time-out https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   375s]   retry 1 HTTP Error 504: Gateway Time-out https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   376s]   retry 3 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=41
+[   382s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   385s]   retry 2 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   388s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   401s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   404s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   406s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   410s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   414s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   415s] prefetched 151/274
+[   419s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=43
+[   445s] prefetched 176/274
+[   459s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=45
+[   464s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=45
+[   469s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=45
+[   474s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=45
+[   501s]   retry 0 HTTP Error 504: Gateway Time-out https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=46
+[   504s] prefetched 201/274
+[   506s]   retry 1 HTTP Error 504: Gateway Time-out https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=46
+[   513s]   retry 0 HTTP Error 504: Gateway Time-out https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=47
+[   515s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=59
+[   518s]   retry 1 HTTP Error 504: Gateway Time-out https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=47
+[   520s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=59
+[   545s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
+/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/rasterio/features.py:381: NotGeoreferencedWarning: Dataset has no geotransform, gcps, or rpcs. The identity matrix will be returned.
+  _rasterize(
+[   550s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
+[   556s] prefetched 226/274
+[   560s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
+[   564s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
+[   565s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
+[   569s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=64
+[   588s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=68
+[   590s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=68
+[   593s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=68
+[   596s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=68
+[   606s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=69
+[   610s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=70
+[   611s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=69
+[   615s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=70
+[   618s] prefetched 251/274
+[   636s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=73
+[   641s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=73
+[   643s]   retry 0 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=74
+[   648s]   retry 1 HTTP Error 502: Bad Gateway https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/exportImage?bbox=74
+[   651s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   673s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   673s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   674s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   675s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   680s]   retry 0 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   686s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   687s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   689s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   692s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   693s]   retry 1 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   704s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   706s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   706s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   712s]   retry 2 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   715s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   726s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   728s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   728s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   734s]   retry 3 HTTP Error 500: Internal Server Error https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/1/query?geometry=
+[   755s]   no Sentinel-2 for tile 300000 4428000
+[   756s]   no Sentinel-2 for tile 300000 4440000
+[   757s]   no Sentinel-2 for tile 300000 4476000
+[   758s]   no Sentinel-2 for tile 300000 4488000
+[   760s]   no Sentinel-2 for tile 312000 4428000
+[   761s]   no Sentinel-2 for tile 312000 4464000
+[   762s]   no Sentinel-2 for tile 312000 4476000
+[   763s]   no Sentinel-2 for tile 312000 4488000
+[   764s]   no Sentinel-2 for tile 324000 4428000
+[   765s]   no Sentinel-2 for tile 324000 4464000
+[   766s]   no Sentinel-2 for tile 324000 4476000
+[   767s]   no Sentinel-2 for tile 324000 4488000
+[   768s]   no Sentinel-2 for tile 324000 4500000
+[   770s]   no Sentinel-2 for tile 336000 4428000
+[   771s]   no Sentinel-2 for tile 336000 4440000
+[   772s]   no Sentinel-2 for tile 336000 4452000
+[   773s]   no Sentinel-2 for tile 336000 4464000
+[   774s]   no Sentinel-2 for tile 336000 4476000
+[   775s]   no Sentinel-2 for tile 336000 4488000
+[   776s]   no Sentinel-2 for tile 336000 4500000
+[   777s]   no Sentinel-2 for tile 336000 4512000
+[   779s]   no Sentinel-2 for tile 348000 4284000
+[   780s]   no Sentinel-2 for tile 348000 4296000
+[   781s]   no Sentinel-2 for tile 348000 4428000
+[   782s]   no Sentinel-2 for tile 348000 4440000
+[   783s]   no Sentinel-2 for tile 348000 4452000
+[   784s]   no Sentinel-2 for tile 348000 4476000
+[   785s]   no Sentinel-2 for tile 348000 4488000
+[   786s]   no Sentinel-2 for tile 348000 4500000
+[   787s]   no Sentinel-2 for tile 348000 4512000
+[   788s]   no Sentinel-2 for tile 360000 4248000
+[   790s]   no Sentinel-2 for tile 360000 4260000
+[   791s]   no Sentinel-2 for tile 360000 4272000
+[   792s]   no Sentinel-2 for tile 360000 4284000
+[   793s]   no Sentinel-2 for tile 360000 4296000
+[   794s]   no Sentinel-2 for tile 360000 4428000
+[   795s]   no Sentinel-2 for tile 360000 4440000
+[   797s]   no Sentinel-2 for tile 360000 4452000
+[   798s]   no Sentinel-2 for tile 360000 4464000
+[   799s]   no Sentinel-2 for tile 360000 4476000
+[   800s]   no Sentinel-2 for tile 360000 4488000
+[   801s]   no Sentinel-2 for tile 360000 4500000
+[   803s]   no Sentinel-2 for tile 360000 4512000
+[   804s]   no Sentinel-2 for tile 360000 4524000
+[   805s]   no Sentinel-2 for tile 372000 4212000
+[   806s]   no Sentinel-2 for tile 372000 4224000
+[   808s]   no Sentinel-2 for tile 372000 4248000
+[   809s]   no Sentinel-2 for tile 372000 4260000
+[   810s]   no Sentinel-2 for tile 372000 4272000
+[   811s]   no Sentinel-2 for tile 372000 4284000
+[   812s]   no Sentinel-2 for tile 372000 4296000
+[   813s]   no Sentinel-2 for tile 372000 4416000
+[   814s]   no Sentinel-2 for tile 372000 4428000
+[   815s]   no Sentinel-2 for tile 372000 4440000
+[   816s]   no Sentinel-2 for tile 372000 4452000
+[   818s]   no Sentinel-2 for tile 372000 4464000
+[   819s]   no Sentinel-2 for tile 372000 4476000
+[   820s]   no Sentinel-2 for tile 372000 4488000
+[   821s]   no Sentinel-2 for tile 372000 4500000
+[   822s]   no Sentinel-2 for tile 372000 4512000
+[   823s]   no Sentinel-2 for tile 372000 4524000
+[   825s]   no Sentinel-2 for tile 384000 4212000
+[   826s]   no Sentinel-2 for tile 384000 4224000
+[   827s]   no Sentinel-2 for tile 384000 4236000
+[   828s]   no Sentinel-2 for tile 384000 4248000
+[   829s]   no Sentinel-2 for tile 384000 4260000
+[   831s]   no Sentinel-2 for tile 384000 4272000
+[   832s]   no Sentinel-2 for tile 384000 4356000
+[   833s]   no Sentinel-2 for tile 384000 4368000
+[   834s]   no Sentinel-2 for tile 384000 4380000
+[   835s]   no Sentinel-2 for tile 384000 4392000
+[   836s]   no Sentinel-2 for tile 384000 4404000
+[   837s]   no Sentinel-2 for tile 384000 4428000
+[   838s]   no Sentinel-2 for tile 384000 4440000
+[   840s]   no Sentinel-2 for tile 384000 4452000
+[   841s]   no Sentinel-2 for tile 384000 4464000
+[   842s]   no Sentinel-2 for tile 384000 4476000
+[   843s]   no Sentinel-2 for tile 384000 4488000
+[   844s]   no Sentinel-2 for tile 384000 4500000
+[   845s]   no Sentinel-2 for tile 384000 4512000
+[   846s]   no Sentinel-2 for tile 384000 4524000
+[   848s]   no Sentinel-2 for tile 396000 4212000
+[   849s]   no Sentinel-2 for tile 396000 4224000
+[   850s]   no Sentinel-2 for tile 396000 4236000
+[   851s]   no Sentinel-2 for tile 396000 4248000
+[   852s]   no Sentinel-2 for tile 396000 4260000
+[   854s]   no Sentinel-2 for tile 396000 4272000
+[   855s]   no Sentinel-2 for tile 396000 4344000
+[   856s]   no Sentinel-2 for tile 396000 4356000
+[   857s]   no Sentinel-2 for tile 396000 4380000
+[   858s]   no Sentinel-2 for tile 396000 4392000
+[   859s]   no Sentinel-2 for tile 396000 4404000
+[   861s]   no Sentinel-2 for tile 396000 4428000
+[   862s]   no Sentinel-2 for tile 396000 4440000
+[   863s]   no Sentinel-2 for tile 396000 4452000
+[   864s]   no Sentinel-2 for tile 396000 4464000
+[   865s]   no Sentinel-2 for tile 396000 4476000
+[   866s]   no Sentinel-2 for tile 396000 4488000
+[   867s]   no Sentinel-2 for tile 396000 4500000
+[   868s]   no Sentinel-2 for tile 396000 4512000
+[   869s]   no Sentinel-2 for tile 396000 4524000
+[   871s]   no Sentinel-2 for tile 396000 4536000
+[   872s]   no Sentinel-2 for tile 408000 4212000
+[   873s]   no Sentinel-2 for tile 408000 4224000
+[   874s]   no Sentinel-2 for tile 408000 4236000
+[   875s]   no Sentinel-2 for tile 408000 4248000
+[   876s]   no Sentinel-2 for tile 408000 4260000
+[   877s]   no Sentinel-2 for tile 408000 4284000
+[   879s]   no Sentinel-2 for tile 408000 4296000
+[   880s]   no Sentinel-2 for tile 408000 4308000
+[   881s]   no Sentinel-2 for tile 408000 4344000
+[   882s]   no Sentinel-2 for tile 408000 4404000
+[   883s]   no Sentinel-2 for tile 408000 4416000
+[   885s]   no Sentinel-2 for tile 408000 4428000
+[   886s]   no Sentinel-2 for tile 408000 4440000
+[   887s]   no Sentinel-2 for tile 408000 4452000
+[   888s]   no Sentinel-2 for tile 408000 4464000
+[   889s]   no Sentinel-2 for tile 408000 4488000
+[   890s]   no Sentinel-2 for tile 408000 4500000
+[   891s]   no Sentinel-2 for tile 408000 4512000
+[   892s]   no Sentinel-2 for tile 408000 4524000
+[   894s]   no Sentinel-2 for tile 408000 4536000
+[   895s]   no Sentinel-2 for tile 420000 4236000
+[   896s]   no Sentinel-2 for tile 420000 4248000
+[   897s]   no Sentinel-2 for tile 420000 4260000
+[   899s]   no Sentinel-2 for tile 420000 4272000
+[   900s]   no Sentinel-2 for tile 420000 4284000
+[   901s]   no Sentinel-2 for tile 420000 4296000
+[   902s]   no Sentinel-2 for tile 420000 4308000
+[   903s]   no Sentinel-2 for tile 420000 4320000
+[   904s]   no Sentinel-2 for tile 420000 4380000
+[   906s]   no Sentinel-2 for tile 420000 4392000
+[   907s]   no Sentinel-2 for tile 420000 4404000
+[   908s]   no Sentinel-2 for tile 420000 4416000
+[   909s]   no Sentinel-2 for tile 420000 4428000
+[   910s]   no Sentinel-2 for tile 420000 4440000
+[   911s]   no Sentinel-2 for tile 420000 4452000
+[   913s]   no Sentinel-2 for tile 420000 4488000
+[   925s]   no Sentinel-2 for tile 420000 4500000
+[   926s]   no Sentinel-2 for tile 420000 4512000
+[   927s]   no Sentinel-2 for tile 420000 4524000
+[   928s]   no Sentinel-2 for tile 420000 4536000
+[   929s]   no Sentinel-2 for tile 420000 4548000
+[   930s]   no Sentinel-2 for tile 420000 4560000
+[   932s]   no Sentinel-2 for tile 420000 4572000
+[   933s]   no Sentinel-2 for tile 432000 4248000
+[   934s]   no Sentinel-2 for tile 432000 4260000
+[   935s]   no Sentinel-2 for tile 432000 4284000
+[   936s]   no Sentinel-2 for tile 432000 4296000
+[   937s]   no Sentinel-2 for tile 432000 4380000
+[   939s]   no Sentinel-2 for tile 432000 4392000
+[   940s]   no Sentinel-2 for tile 432000 4404000
+[   941s]   no Sentinel-2 for tile 432000 4416000
+[   942s]   no Sentinel-2 for tile 432000 4428000
+[   943s]   no Sentinel-2 for tile 432000 4440000
+[   945s]   no Sentinel-2 for tile 432000 4452000
+[   946s]   no Sentinel-2 for tile 432000 4464000
+[   947s]   no Sentinel-2 for tile 432000 4476000
+[   948s]   no Sentinel-2 for tile 432000 4500000
+[   949s]   no Sentinel-2 for tile 432000 4512000
+[   950s]   no Sentinel-2 for tile 432000 4524000
+[   951s]   no Sentinel-2 for tile 432000 4536000
+[   952s]   no Sentinel-2 for tile 432000 4548000
+[   954s]   no Sentinel-2 for tile 432000 4560000
+[   955s]   no Sentinel-2 for tile 432000 4572000
+[   956s]   no Sentinel-2 for tile 432000 4584000
+[   957s]   no Sentinel-2 for tile 432000 4596000
+[   958s]   no Sentinel-2 for tile 432000 4608000
+[   959s]   no Sentinel-2 for tile 444000 4248000
+[   960s]   no Sentinel-2 for tile 444000 4260000
+[   961s]   no Sentinel-2 for tile 444000 4284000
+[   962s]   no Sentinel-2 for tile 444000 4296000
+[   964s]   no Sentinel-2 for tile 444000 4308000
+[   965s]   no Sentinel-2 for tile 444000 4380000
+[   966s]   no Sentinel-2 for tile 444000 4392000
+[   967s]   no Sentinel-2 for tile 444000 4404000
+[   968s]   no Sentinel-2 for tile 444000 4416000
+[   969s]   no Sentinel-2 for tile 444000 4428000
+[   971s]   no Sentinel-2 for tile 444000 4440000
+[   972s]   no Sentinel-2 for tile 444000 4452000
+[   973s]   no Sentinel-2 for tile 444000 4464000
+[   974s]   no Sentinel-2 for tile 444000 4488000
+[   975s]   no Sentinel-2 for tile 444000 4512000
+[   976s]   no Sentinel-2 for tile 444000 4524000
+[   978s]   no Sentinel-2 for tile 444000 4572000
+[   979s]   no Sentinel-2 for tile 444000 4584000
+[   980s]   no Sentinel-2 for tile 444000 4596000
+[   981s]   no Sentinel-2 for tile 444000 4608000
+[   982s]   no Sentinel-2 for tile 456000 4260000
+[   983s]   no Sentinel-2 for tile 456000 4368000
+[   984s]   no Sentinel-2 for tile 456000 4380000
+[   986s]   no Sentinel-2 for tile 456000 4392000
+[   987s]   no Sentinel-2 for tile 456000 4404000
+[   988s]   no Sentinel-2 for tile 456000 4416000
+[   989s]   no Sentinel-2 for tile 456000 4428000
+[   991s]   no Sentinel-2 for tile 456000 4440000
+[   991s]   no Sentinel-2 for tile 456000 4452000
+[   993s]   no Sentinel-2 for tile 456000 4476000
+[   994s]   no Sentinel-2 for tile 456000 4488000
+[   995s]   no Sentinel-2 for tile 456000 4500000
+[   996s]   no Sentinel-2 for tile 456000 4608000
+[   997s]   no Sentinel-2 for tile 468000 4236000
+[   998s]   no Sentinel-2 for tile 468000 4452000
+[  1000s]   no Sentinel-2 for tile 468000 4464000
+[  1001s]   no Sentinel-2 for tile 468000 4488000
+[  1002s]   no Sentinel-2 for tile 468000 4500000
+[  1003s]   no Sentinel-2 for tile 480000 4248000
+[  1004s]   no Sentinel-2 for tile 480000 4260000
+[  1005s]   no Sentinel-2 for tile 480000 4428000
+[  1006s]   no Sentinel-2 for tile 480000 4452000
+[  1007s]   no Sentinel-2 for tile 480000 4464000
+[  1008s]   no Sentinel-2 for tile 600000 4596000
+[  1010s]   no Sentinel-2 for tile 600000 4608000
+[  1011s]   no Sentinel-2 for tile 612000 4596000
+[  1012s]   no Sentinel-2 for tile 612000 4608000
+[  1013s]   no Sentinel-2 for tile 624000 4596000
+[  1014s]   no Sentinel-2 for tile 624000 4608000
+[  1015s]   no Sentinel-2 for tile 624000 4620000
+[  1016s]   no Sentinel-2 for tile 636000 4296000
+[  1017s]   no Sentinel-2 for tile 636000 4416000
+[  1018s]   no Sentinel-2 for tile 636000 4428000
+[  1020s]   no Sentinel-2 for tile 636000 4440000
+[  1021s]   no Sentinel-2 for tile 636000 4452000
+[  1022s]   no Sentinel-2 for tile 636000 4596000
+[  1023s]   no Sentinel-2 for tile 636000 4608000
+[  1024s]   no Sentinel-2 for tile 636000 4620000
+[  1025s]   no Sentinel-2 for tile 648000 4356000
+[  1026s]   no Sentinel-2 for tile 648000 4368000
+[  1027s]   no Sentinel-2 for tile 648000 4380000
+[  1028s]   no Sentinel-2 for tile 648000 4428000
+[  1029s]   no Sentinel-2 for tile 648000 4440000
+[  1031s]   no Sentinel-2 for tile 648000 4452000
+[  1032s]   no Sentinel-2 for tile 648000 4464000
+[  1033s]   no Sentinel-2 for tile 648000 4500000
+[  1034s]   no Sentinel-2 for tile 648000 4596000
+[  1035s]   no Sentinel-2 for tile 648000 4608000
+[  1036s]   no Sentinel-2 for tile 660000 4452000
+[  1037s]   no Sentinel-2 for tile 660000 4500000
+[  1038s]   no Sentinel-2 for tile 660000 4512000
+[  1040s]   no Sentinel-2 for tile 660000 4596000
+[  1041s]   no Sentinel-2 for tile 660000 4608000
+[  1042s]   no Sentinel-2 for tile 672000 4464000
+[  1043s]   no Sentinel-2 for tile 672000 4608000
+[  1044s]   no Sentinel-2 for tile 684000 4452000
+[  1045s]   no Sentinel-2 for tile 684000 4464000
+[  1046s]   no Sentinel-2 for tile 684000 4476000
+[  1047s]   no Sentinel-2 for tile 684000 4488000
+[  1049s]   no Sentinel-2 for tile 684000 4572000
+[  1050s]   no Sentinel-2 for tile 684000 4584000
+[  1051s]   no Sentinel-2 for tile 696000 4428000
+[  1052s]   no Sentinel-2 for tile 696000 4452000
+[  1053s]   no Sentinel-2 for tile 696000 4464000
+[  1054s]   no Sentinel-2 for tile 696000 4476000
+[  1055s]   no Sentinel-2 for tile 696000 4488000
+[  1056s]   no Sentinel-2 for tile 696000 4500000
+[  1058s]   no Sentinel-2 for tile 696000 4572000
+[  1059s]   no Sentinel-2 for tile 696000 4584000
+[  1060s]   no Sentinel-2 for tile 708000 4428000
+[  1061s]   no Sentinel-2 for tile 708000 4452000
+[  1062s]   no Sentinel-2 for tile 708000 4464000
+[  1063s]   no Sentinel-2 for tile 708000 4560000
+[  1065s]   no Sentinel-2 for tile 708000 4572000
+[  1066s]   no Sentinel-2 for tile 720000 4560000
+[  1067s]   no Sentinel-2 for tile 720000 4572000
+[  1068s]   no Sentinel-2 for tile 732000 4476000
+[  1069s]   no Sentinel-2 for tile 732000 4596000
+[  1070s]   no Sentinel-2 for tile 732000 4608000
+[  1071s]   no Sentinel-2 for tile 732000 4620000
+[  1072s]   no Sentinel-2 for tile 732000 4632000
+[  1073s]   no Sentinel-2 for tile 732000 4644000
+[  1074s]   no Sentinel-2 for tile 744000 4596000
+[  1076s]   no Sentinel-2 for tile 744000 4608000
+[  1077s]   no Sentinel-2 for tile 744000 4620000
+[  1078s]   no Sentinel-2 for tile 744000 4632000
+[  1078s] tiles with data: 0, missing: 274; background sample: 0
+[  1078s] places with features: 0
 Traceback (most recent call last):
-  File "/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py", line 247, in <module>
-    bisp = gpd.GeoSeries([unary_union(polys)], crs=4326).to_crs(CRS).iloc[0].buffer(0)
-                          ^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/shapely/ops.py", line 117, in unary_union
-    return shapely.union_all(geoms, axis=None)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/shapely/decorators.py", line 173, in wrapper
-    result = func(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/shapely/decorators.py", line 88, in wrapped
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/shapely/set_operations.py", line 553, in union_all
-    return lib.unary_union(collections, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-shapely.errors.GEOSException: TopologyException: side location conflict at -117.60987519922416 38.88213872075675. This can occur if the input geometry is invalid.
+  File "/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py", line 354, in <module>
+    Xp, Xb = P[train_ok.values][FEATS].to_numpy(), bg[FEATS].to_numpy()
+                                                   ~~^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['slope', 'relief', 'tpi300', 'tpi1000', 'north', 'ndvi', 'bsi', 'carb',\n       'iron', 'dist_unit'],\n      dtype='str')] are in the [columns]"
