@@ -1,75 +1,146 @@
 {
- "model": "forest",
+ "model": "ensemble",
  "evals": {
-  "logistic": {
+  "ensemble": {
    "places": [
     {
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.684,
+     "percentile": 0.798,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.987,
+     "percentile": 0.856,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.581,
+     "percentile": 0.955,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.428,
+     "percentile": 0.752,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.974,
+     "percentile": 0.945,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.991,
+     "percentile": 0.969,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.3,
+     "percentile": 0.629,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.428,
+     "percentile": 0.773,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.849,
+     "percentile": 0.862,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.684,
+   "median_percentile": 0.856,
    "top10": 3,
-   "top25": 4,
+   "top25": 8,
+   "n": 9
+  },
+  "logistic": {
+   "places": [
+    {
+     "place": 1,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.716,
+     "trained_on": 7
+    },
+    {
+     "place": 3,
+     "formation": "Luning",
+     "precise": true,
+     "percentile": 0.681,
+     "trained_on": 7
+    },
+    {
+     "place": 4,
+     "formation": "Gabbs",
+     "precise": true,
+     "percentile": 0.881,
+     "trained_on": 7
+    },
+    {
+     "place": 6,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.859,
+     "trained_on": 6
+    },
+    {
+     "place": 7,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.988,
+     "trained_on": 6
+    },
+    {
+     "place": 8,
+     "formation": "Favret",
+     "precise": false,
+     "percentile": 0.999,
+     "trained_on": 5
+    },
+    {
+     "place": 9,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.513,
+     "trained_on": 7
+    },
+    {
+     "place": 10,
+     "formation": "Favret",
+     "precise": true,
+     "percentile": 0.61,
+     "trained_on": 7
+    },
+    {
+     "place": 13,
+     "formation": "Prida",
+     "precise": true,
+     "percentile": 0.907,
+     "trained_on": 7
+    }
+   ],
+   "median_percentile": 0.859,
+   "top10": 3,
+   "top25": 5,
    "n": 9
   },
   "forest": {
@@ -78,69 +149,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.758,
+     "percentile": 0.754,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.779,
+     "percentile": 0.896,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.805,
+     "percentile": 0.928,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.0,
+     "percentile": 0.535,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.691,
+     "percentile": 0.81,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.709,
+     "percentile": 0.858,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.657,
+     "percentile": 0.65,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.583,
+     "percentile": 0.829,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.706,
+     "percentile": 0.697,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.706,
-   "top10": 0,
-   "top25": 3,
+   "median_percentile": 0.81,
+   "top10": 1,
+   "top25": 6,
    "n": 9
   },
   "exposure": {
@@ -220,69 +291,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.755,
+     "percentile": 0.753,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.776,
+     "percentile": 0.903,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.774,
+     "percentile": 0.919,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.363,
+     "percentile": 0.668,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.702,
+     "percentile": 0.789,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.662,
+     "percentile": 0.83,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.648,
+     "percentile": 0.627,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.774,
+     "percentile": 0.921,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.732,
+     "percentile": 0.75,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.732,
-   "top10": 0,
-   "top25": 4,
+   "median_percentile": 0.789,
+   "top10": 3,
+   "top25": 7,
    "n": 9
   },
   "forest_terrain": {
@@ -291,67 +362,67 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.433,
+     "percentile": 0.396,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.378,
+     "percentile": 0.555,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.452,
+     "percentile": 0.667,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.38,
+     "percentile": 0.647,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.462,
+     "percentile": 0.533,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.484,
+     "percentile": 0.414,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.548,
+     "percentile": 0.61,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.36,
+     "percentile": 0.692,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.747,
+     "percentile": 0.633,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.452,
+   "median_percentile": 0.61,
    "top10": 0,
    "top25": 0,
    "n": 9
@@ -362,69 +433,69 @@
      "place": 1,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.838,
+     "percentile": 0.793,
      "trained_on": 7
     },
     {
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.913,
+     "percentile": 0.856,
      "trained_on": 7
     },
     {
      "place": 4,
      "formation": "Gabbs",
      "precise": true,
-     "percentile": 0.789,
+     "percentile": 0.901,
      "trained_on": 7
     },
     {
      "place": 6,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.0,
+     "percentile": 0.262,
      "trained_on": 6
     },
     {
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.759,
+     "percentile": 0.808,
      "trained_on": 6
     },
     {
      "place": 8,
      "formation": "Favret",
      "precise": false,
-     "percentile": 0.668,
+     "percentile": 0.8,
      "trained_on": 5
     },
     {
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.5,
+     "percentile": 0.35,
      "trained_on": 7
     },
     {
      "place": 10,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.644,
+     "percentile": 0.699,
      "trained_on": 7
     },
     {
      "place": 13,
      "formation": "Prida",
      "precise": true,
-     "percentile": 0.0,
+     "percentile": 0.193,
      "trained_on": 7
     }
    ],
-   "median_percentile": 0.668,
+   "median_percentile": 0.793,
    "top10": 1,
-   "top25": 4,
+   "top25": 5,
    "n": 9
   },
   "distance_only": {
@@ -440,7 +511,7 @@
      "place": 3,
      "formation": "Luning",
      "precise": true,
-     "percentile": 0.611,
+     "percentile": 0.998,
      "trained_on": 7
     },
     {
@@ -461,7 +532,7 @@
      "place": 7,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.613,
+     "percentile": 0.999,
      "trained_on": 6
     },
     {
@@ -475,7 +546,7 @@
      "place": 9,
      "formation": "Favret",
      "precise": true,
-     "percentile": 0.998,
+     "percentile": 0.611,
      "trained_on": 7
     },
     {
@@ -494,21 +565,43 @@
     }
    ],
    "median_percentile": 0.611,
-   "top10": 1,
-   "top25": 1,
+   "top10": 2,
+   "top25": 2,
    "n": 9
   },
   "forest_importance": {
-   "slope": 0.163,
-   "relief": 0.16,
-   "tpi300": 0.04,
-   "tpi1000": 0.065,
-   "north": 0.02,
-   "ndvi": 0.032,
-   "bsi": 0.165,
-   "carb": 0.266,
-   "iron": 0.042,
-   "dist_unit": 0.045
+   "slope": 0.085,
+   "relief": 0.103,
+   "tpi300": 0.012,
+   "tpi1000": 0.023,
+   "north": 0.004,
+   "ndvi": 0.011,
+   "bsi": 0.095,
+   "carb": 0.119,
+   "iron": 0.008,
+   "dist_unit": 0.025,
+   "slope_450": 0.222,
+   "ndvi_450": 0.043,
+   "bsi_450": 0.045,
+   "carb_450": 0.18,
+   "iron_450": 0.025
+  },
+  "logistic_coef": {
+   "slope": 8.283,
+   "relief": -15.189,
+   "tpi300": 3.432,
+   "tpi1000": -3.389,
+   "north": -0.18,
+   "ndvi": -0.602,
+   "bsi": -5.94,
+   "carb": -1.113,
+   "iron": 0.287,
+   "dist_unit": -0.944,
+   "slope_450": 7.555,
+   "ndvi_450": 3.2,
+   "bsi_450": 5.424,
+   "carb_450": -6.508,
+   "iron_450": 0.988
   }
  },
  "geology": {
@@ -530,7 +623,12 @@
   "bsi",
   "carb",
   "iron",
-  "dist_unit"
+  "dist_unit",
+  "slope_450",
+  "ndvi_450",
+  "bsi_450",
+  "carb_450",
+  "iron_450"
  ],
  "places": [
   {
@@ -697,5 +795,5 @@
  "targets": 40,
  "tiles": 274,
  "tiles_missing": 0,
- "seconds": 361
+ "seconds": 350
 }

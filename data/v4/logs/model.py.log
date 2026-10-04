@@ -1,6 +1,6 @@
-[    20s] units: {'A': 1000, 'B': 2541} km²
-[    20s] known places: 16 (13 precise); in search area: 9
-[    20s]     place  n  precise formation  in_area  km_to_units
+[    14s] units: {'A': 1000, 'B': 2541} km²
+[    15s] known places: 16 (13 precise); in search area: 9
+[    15s]     place  n  precise formation  in_area  km_to_units
 0       1  3     True    Luning     True         0.00
 1       2  2     True    Luning    False         2.85
 2       3  1     True    Luning     True         0.00
@@ -17,605 +17,606 @@
 13     14  1     True              False         1.03
 14     15  1     True              False         4.14
 15     16  1     True              False         1.31
-[    21s] tiles: 274
-[    35s]   retry 0 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
-[    49s]   retry 1 HTTP Error 504: Gateway Timeout https://overpass-api.de/api/interpreter
-[    89s] Berlin-Ichthyosaur State Park: 0.3 km²
-[    90s] prefetched 1/274
-[    90s] prefetched 26/274
-[    90s] prefetched 51/274
-[    91s] prefetched 76/274
-[    91s] prefetched 101/274
-[    91s] prefetched 126/274
-[    91s] prefetched 151/274
-[    92s] prefetched 176/274
-[    92s] prefetched 201/274
-[    92s] prefetched 226/274
-[    92s] prefetched 251/274
-[    93s] tile 1/274: cells in area 64596
-[    93s] tile 11/274: cells in area 76437
-[    94s] tile 21/274: cells in area 6547
-[    95s] tile 31/274: cells in area 19556
-[    96s] tile 41/274: cells in area 15542
-[    97s] tile 51/274: cells in area 12866
-[    97s] tile 61/274: cells in area 8082
-[    98s] tile 71/274: cells in area 81524
-[    99s] tile 81/274: cells in area 601
-[   100s] tile 91/274: cells in area 58243
-[   100s] tile 101/274: cells in area 7485
-[   101s] tile 111/274: cells in area 3710
-[   102s] tile 121/274: cells in area 21505
-[   103s] tile 131/274: cells in area 12377
-[   104s] tile 141/274: cells in area 30131
-[   104s] tile 151/274: cells in area 79185
-[   105s] tile 161/274: cells in area 17646
-[   106s] tile 171/274: cells in area 12545
-[   107s] tile 181/274: cells in area 3624
-[   108s] tile 191/274: cells in area 36323
-[   108s] tile 201/274: cells in area 1588
-[   109s] tile 211/274: cells in area 30373
-[   110s] tile 221/274: cells in area 43910
-[   111s] tile 231/274: cells in area 14827
-[   112s] tile 241/274: cells in area 61134
-[   112s] tile 251/274: cells in area 64824
-[   113s] tile 261/274: cells in area 8229
-[   114s] tile 271/274: cells in area 12646
-[   114s] tiles with data: 274, missing: 0; background sample: 94870
-[   114s] places with features: 15
-[   115s] training places: 8
-[   119s] logistic: held-out places' median percentile 0.68; top 10%: 3/9; top 25%: 4/9
-[   167s] forest: held-out places' median percentile 0.71; top 10%: 0/9; top 25%: 3/9
-[   167s] exposure: held-out places' median percentile 0.45; top 10%: 0/9; top 25%: 0/9
-[   215s] forest_no_distance: held-out places' median percentile 0.73; top 10%: 0/9; top 25%: 4/9
-[   258s] forest_terrain: held-out places' median percentile 0.45; top 10%: 0/9; top 25%: 0/9
-[   297s] forest_satellite: held-out places' median percentile 0.67; top 10%: 1/9; top 25%: 4/9
-[   323s] distance_only: held-out places' median percentile 0.61; top 10%: 1/9; top 25%: 1/9
-[   323s] model: forest on all features (ablations above for comparison)
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+[    15s] tiles: 274
+[    37s] Berlin-Ichthyosaur State Park: 0.3 km²
+[    37s] prefetched 1/274
+[    38s] prefetched 26/274
+[    38s] prefetched 51/274
+[    38s] prefetched 76/274
+[    38s] prefetched 101/274
+[    38s] prefetched 126/274
+[    39s] prefetched 151/274
+[    39s] prefetched 176/274
+[    39s] prefetched 201/274
+[    39s] prefetched 226/274
+[    40s] prefetched 251/274
+[    40s] tile 1/274: cells in area 64596
+[    40s] tile 11/274: cells in area 76437
+[    41s] tile 21/274: cells in area 6547
+[    42s] tile 31/274: cells in area 19556
+[    43s] tile 41/274: cells in area 15542
+[    43s] tile 51/274: cells in area 12866
+[    44s] tile 61/274: cells in area 8082
+[    45s] tile 71/274: cells in area 81524
+[    46s] tile 81/274: cells in area 601
+[    46s] tile 91/274: cells in area 58243
+[    47s] tile 101/274: cells in area 7485
+[    48s] tile 111/274: cells in area 3710
+[    49s] tile 121/274: cells in area 21505
+[    49s] tile 131/274: cells in area 12377
+[    50s] tile 141/274: cells in area 30131
+[    51s] tile 151/274: cells in area 79185
+[    51s] tile 161/274: cells in area 17646
+[    52s] tile 171/274: cells in area 12545
+[    53s] tile 181/274: cells in area 3624
+[    54s] tile 191/274: cells in area 36323
+[    54s] tile 201/274: cells in area 1588
+[    55s] tile 211/274: cells in area 30373
+[    56s] tile 221/274: cells in area 43910
+[    56s] tile 231/274: cells in area 14827
+[    57s] tile 241/274: cells in area 61134
+[    58s] tile 251/274: cells in area 64824
+[    58s] tile 261/274: cells in area 8229
+[    59s] tile 271/274: cells in area 12646
+[    59s] tiles with data: 274, missing: 0; background sample: 94870
+[    60s] places with features: 15
+[    61s] training places: 8
+[   112s] ensemble: held-out places' median percentile 0.86; top 10%: 3/9; top 25%: 8/9
+[   120s] logistic: held-out places' median percentile 0.86; top 10%: 3/9; top 25%: 5/9
+[   162s] forest: held-out places' median percentile 0.81; top 10%: 1/9; top 25%: 6/9
+[   162s] exposure: held-out places' median percentile 0.45; top 10%: 0/9; top 25%: 0/9
+[   206s] forest_no_distance: held-out places' median percentile 0.79; top 10%: 3/9; top 25%: 7/9
+[   244s] forest_terrain: held-out places' median percentile 0.61; top 10%: 0/9; top 25%: 0/9
+[   280s] forest_satellite: held-out places' median percentile 0.79; top 10%: 1/9; top 25%: 5/9
+[   304s] distance_only: held-out places' median percentile 0.61; top 10%: 2/9; top 25%: 2/9
+[   304s] model: ensemble of forest and logistic regression (ablations above for comparison)
+[   310s] forest importance: {'slope': 0.085, 'relief': 0.103, 'tpi300': 0.012, 'tpi1000': 0.023, 'north': 0.004, 'ndvi': 0.011, 'bsi': 0.095, 'carb': 0.119, 'iron': 0.008, 'dist_unit': 0.025, 'slope_450': 0.222, 'ndvi_450': 0.043, 'bsi_450': 0.045, 'carb_450': 0.18, 'iron_450': 0.025}
+[   310s] logistic coefficients (standardised): {'slope': 8.283, 'relief': -15.189, 'tpi300': 3.432, 'tpi1000': -3.389, 'north': -0.18, 'ndvi': -0.602, 'bsi': -5.94, 'carb': -1.113, 'iron': 0.287, 'dist_unit': -0.944, 'slope_450': 7.555, 'ndvi_450': 3.2, 'bsi_450': 5.424, 'carb_450': -6.508, 'iron_450': 0.988}
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:440: RuntimeWarning: All-NaN slice encountered
+/home/runner/work/project-paleowave/project-paleowave/tools/v4/model.py:467: RuntimeWarning: All-NaN slice encountered
   blk = np.nanmax(pct[: n * 3, : n * 3].reshape(n, 3, n, 3).swapaxes(1, 2).reshape(n, n, 9), axis=2) if np.isfinite(pct).any() else None
-[   361s] cells in the top 2%: 189040
-[   361s] done; targets: 40
+[   350s] cells in the top 2%: 258290
+[   350s] done; targets: 40
